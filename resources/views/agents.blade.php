@@ -4,7 +4,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Real Spaces - Responsive Real Estate Template</title>
+<title>Imoforse</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -21,7 +21,7 @@
 <link href="{{ asset('/plugins/owl-carousel/css/owl.theme.css') }}" rel="stylesheet" type="text/css">
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href="{{ asset('/colors/color1.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/colors/color9.css') }}" rel="stylesheet" type="text/css">
 <!-- SCRIPTS
   ================================================== -->
 <script src="{{ asset('/js/modernizr.js') }}"></script><!-- Modernizr -->
@@ -350,7 +350,7 @@
                           </li>
                         </ul>
                     </div>
-                  </div>  
+                  </div>
               </div>
           </div>
       </div>
@@ -425,9 +425,9 @@
   <!-- End Site Footer -->
   <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
-<script src="{{ asset('/js/jquery-2.0.0.min.js') }}"></script> 
-<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script> 
-<script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js') }}"></script> 
+<script src="{{ asset('/js/jquery-2.0.0.min.js') }}"></script>
+<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script>
+<script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js') }}"></script>
 <script src="{{ asset('/js/helper-plugins.js') }}"></script>
 <script src="{{ asset('/js/bootstrap.js') }}"></script>

@@ -4,7 +4,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Real Spaces - Responsive Real Estate Template</title>
+<title>Imoforse</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -21,7 +21,7 @@
 <link href="plugins/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href="colors/color1.css" rel="stylesheet" type="text/css">
+<link href="colors/color9.css" rel="stylesheet" type="text/css">
 <!-- SCRIPTS
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
@@ -171,7 +171,7 @@
       </div>
     </div>
   </header>
-  <!-- End Site Header --> 
+  <!-- End Site Header -->
   <!-- Site Showcase -->
   <div class="site-showcase">
   <!-- Start Page Header -->
@@ -468,15 +468,15 @@
     </div>
   </footer>
   <!-- End Site Footer -->
-  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> 
+  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
-<script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call --> 
-<script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin --> 
-<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel --> 
-<script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
-<script src="js/helper-plugins.js"></script> <!-- Plugins --> 
-<script src="js/bootstrap.js"></script> <!-- UI --> 
-<script src="js/waypoints.js"></script> <!-- Waypoints --> 
+<script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call -->
+<script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
+<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel -->
+<script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
+<script src="js/helper-plugins.js"></script> <!-- Plugins -->
+<script src="js/bootstrap.js"></script> <!-- UI -->
+<script src="js/waypoints.js"></script> <!-- Waypoints -->
 <script src="js/init.js"></script> <!-- All Scripts -->
 <!--[if lte IE 9]><script src="js/script_ie.js"></script><![endif]-->
 </body>

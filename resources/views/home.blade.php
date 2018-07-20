@@ -4,7 +4,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Real Spaces - Responsive Real Estate Template</title>
+<title>Imoforse</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -21,7 +21,7 @@
 <link href="plugins/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href="colors/color1.css" rel="stylesheet" type="text/css">
+<link href="colors/color9.css" rel="stylesheet" type="text/css">
 <!-- SCRIPTS
   ================================================== -->
 <script src="js/modernizr.js"></script><!-- Modernizr -->
@@ -201,7 +201,7 @@
         </li>
       </ul>
     </div>
-    <!-- End Hero Slider --> 
+    <!-- End Hero Slider -->
     <!-- Site Search Module -->
     <div class="site-search-module">
       <div class="container">
@@ -592,11 +592,11 @@
                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                            </div>
                        </li>
-                    </ul> 
+                    </ul>
                 </div>
                   <div class="col-md-4 col-sm-4 popular-agent column">
                       <h3>Popular Agent</h3>
-                    <a href="agent-detail.php"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a> 
+                    <a href="agent-detail.php"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a>
                     <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-6">
                           <h4><a href="agent-detail.php">Brooklyn Coyle</a></h4>
@@ -620,7 +620,7 @@
                               <br><a href="#">www.companyurl.com</a>
                            </cite>
                         </li>
-                    </ul> 
+                    </ul>
                 </div>
              </div>
          </div>
@@ -717,13 +717,13 @@
   <!-- End Site Footer -->
   <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
-<script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call --> 
-<script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin --> 
-<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel --> 
-<script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
-<script src="js/helper-plugins.js"></script> <!-- Plugins --> 
-<script src="js/bootstrap.js"></script> <!-- UI --> 
-<script src="js/waypoints.js"></script> <!-- Waypoints --> 
+<script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call -->
+<script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
+<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel -->
+<script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
+<script src="js/helper-plugins.js"></script> <!-- Plugins -->
+<script src="js/bootstrap.js"></script> <!-- UI -->
+<script src="js/waypoints.js"></script> <!-- Waypoints -->
 <script src="js/init.js"></script> <!-- All Scripts -->
 <!--[if lte IE 9]><script src="js/script_ie.js"></script><![endif]-->
 </body>

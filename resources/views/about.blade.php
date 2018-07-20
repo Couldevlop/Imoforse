@@ -4,7 +4,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Real Spaces - Responsive Real Estate Template</title>
+<title>A propos - Imoforse</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -21,7 +21,7 @@
 <link href=" {{ asset('/plugins/owl-carousel/css/owl.theme.css')}} " rel="stylesheet" type="text/css">
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href=" {{ asset('/colors/color1.css')}} " rel="stylesheet" type="text/css">
+<link href=" {{ asset('/colors/color9.css')}} " rel="stylesheet" type="text/css">
 <!-- SCRIPTS
   ================================================== -->
 <script src=" {{ asset('/js/modernizr.js')}} "></script><!-- Modernizr -->
@@ -38,14 +38,14 @@
         <div class="row">
           <div class="col-md-4 col-sm-6">
             <ul class="horiz-nav pull-left">
-              <li class="dropdown"><a data-toggle="dropdown"><i class="fa fa-user"></i> Login <b class="caret"></b></a>
+              <li class="dropdown"><a data-toggle="dropdown"><i class="fa fa-user"></i> Mon compte <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="my-properties.php">My properties</a></li>
-                  <li><a href="submit.php">Add a property</a></li>
-                  <li><a href="edit-agent-profile.php">My Profile</a></li>
+                    <li><a href="{{ url('/myProperties') }}">Mes propriétés</a></li>
+                    <li><a href="{{ url('/submitProperty') }}">Ajouter une propriété</a></li>
+                    <li><a href="{{ url('/editAgentProfile') }}">Mon profile</a></li>
                 </ul>
               </li>
-              <li><a href="login.php"><i class="fa fa-check-circle"></i> Register</a></li>
+              <li><a href="{{ url('/login') }}"><i class="fa fa-check-circle"></i> Connexion</a></li>
               </ul>
           </div>
           <div class="col-md-8 col-sm-6">
@@ -62,7 +62,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-8 col-xs-8">
-            <h1 class="logo"> <a href="{{ url('/')}}"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="{{ url('/')}}"><img src="{{ asset('/images/logo.png') }}" alt="Logo"></a> </h1>
           </div>
           <div class="col-md-8 col-sm-4 col-xs-4">
               <div class="contact-info-blocks hidden-sm hidden-xs">
@@ -232,35 +232,35 @@
                             <div class="accordion-group panel">
                               <div class="accordion-heading togglize"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseOne"> Question will come here <i class="fa fa-plus-circle"></i> <i class="fa fa-minus-circle"></i> </a> </div>
                               <div id="collapseOne" class="accordion-body collapse">
-                                <div class="accordion-inner"> Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
-                                  Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. 
-                                  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui. 
-                                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. 
+                                <div class="accordion-inner"> Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                                  Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+                                  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui.
+                                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
                                   Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. </div>
                               </div>
                             </div>
                             <div class="accordion-group panel">
                               <div class="accordion-heading togglize"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseTwo"> Question will come here <i class="fa fa-plus-circle"></i> <i class="fa fa-minus-circle"></i> </a> </div>
                               <div id="collapseTwo" class="accordion-body collapse">
-                                <div class="accordion-inner"> Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
-                                  Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. 
-                                  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui. 
-                                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. 
+                                <div class="accordion-inner"> Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                                  Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+                                  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui.
+                                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
                                   Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. </div>
                               </div>
                             </div>
                             <div class="accordion-group">
                               <div class="accordion-heading togglize"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseThird"> Question will come here <i class="fa fa-plus-circle"></i> <i class="fa fa-minus-circle"></i> </a> </div>
                               <div id="collapseThird" class="accordion-body collapse">
-                                <div class="accordion-inner"> Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
-                                  Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. 
-                                  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui. 
-                                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. 
+                                <div class="accordion-inner"> Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                                  Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+                                  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui.
+                                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
                                   Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. </div>
                               </div>
                             </div>
                           </div>
-                          <!-- End Toggle --> 
+                          <!-- End Toggle -->
                     	</div>
                   </div>
         		</div>
@@ -337,12 +337,12 @@
   <!-- End Site Footer -->
   <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
-<script src="{{ asset('/js/jquery-2.0.0.min.js')}} "></script> 
-<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js')}} "></script> 
+<script src="{{ asset('/js/jquery-2.0.0.min.js')}} "></script>
+<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js')}} "></script>
 <script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js')}} "></script>
-<script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js')}} "></script> 
-<script src="{{ asset('/js/helper-plugins.js')}} "></script>  
-<script src="{{ asset('/js/bootstrap.js')}} "></script> 
+<script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js')}} "></script>
+<script src="{{ asset('/js/helper-plugins.js')}} "></script>
+<script src="{{ asset('/js/bootstrap.js')}} "></script>
 <script src=" {{ asset('/js/waypoints.js')}} "></script>
 <script src="{{ asset('/js/init.js')}} "></script> <!-- All Scripts -->
 <!--[if lte IE 9]><script src="js/script_ie.js"></script><![endif]-->

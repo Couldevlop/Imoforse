@@ -4,7 +4,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Real Spaces - Responsive Real Estate Template</title>
+<title>Contact - Imoforse</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -21,7 +21,7 @@
 <link href="{{ asset('/plugins/owl-carousel/css/owl.theme.css') }}" rel="stylesheet" type="text/css">
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href="{{ asset('/colors/color1.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/colors/color9.css') }}" rel="stylesheet" type="text/css">
 <!-- SCRIPTS
   ================================================== -->
 <script src="{{ asset('/js/modernizr.js') }}"></script><!-- Modernizr -->
@@ -45,7 +45,7 @@
                   <li><a href="edit-agent-profile.php">My Profile</a></li>
                 </ul>
               </li>
-              <li><a href="{{ url('/login') }}"><i class="fa fa-check-circle"></i> Register</a></li>
+              <li><a href="{{ url('/login') }}"><i class="fa fa-check-circle"></i> Connexion</a></li>
               </ul>
           </div>
           <div class="col-md-8 col-sm-6">
@@ -171,14 +171,14 @@
       </div>
     </div>
   </header>
-  <!-- End Site Header --> 
+  <!-- End Site Header -->
   <!-- Site Showcase -->
-  <div class="site-showcase"> 
+  <div class="site-showcase">
     <!-- Start Page Header -->
     <div class="parallax page-header" id="contact-map">
          <iframe src="https://maps.google.com/?ie=UTF8&amp;ll=40.717989,-74.002705&amp;spn=0.043846,0.077162&amp;t=m&amp;z=14&amp;output=embed" width="100%" height="220px"></iframe>
     </div>
-    <!-- End Page Header --> 
+    <!-- End Page Header -->
   </div>
   <!-- Start Content -->
   <div class="main" role="main">
@@ -297,22 +297,22 @@
   <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
 <script src="{{ asset('/js/jquery-2.0.0.min.js') }}"></script>
-<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script> 
-<script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js') }}"></script> 
+<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script>
+<script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js') }}"></script>
-<script src="{{ asset('/js/helper-plugins.js') }}"></script> 
-<script src="{{ asset('/js/bootstrap.js') }}"></script> 
+<script src="{{ asset('/js/helper-plugins.js') }}"></script>
+<script src="{{ asset('/js/bootstrap.js') }}"></script>
 <script src="{{ asset('/js/waypoints.js') }}"></script>
 <script src="{{ asset('/js/init.js') }}"></script> <!-- All Scripts -->
 <!--[if lte IE 9]><script src="js/script_ie.js"></script><![endif]-->
-<script src="http://maps.google.com/maps/api/js?sensor=false"></script> <!-- Google Map --> 
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script> <!-- Google Map -->
 <script type="text/javascript">
         function PropertiesMap() {
 
             /* Properties Array */
             var properties = [
                 { title:"116 Waverly Place",  price:"<strong>$</strong><span>2,800 monthly</span>",  lat:40.73238,  lng:-73.99948,  thumb:"http://placehold.it/150x100&amp;text=IMAGE+PLACEHOLDER",  url:"property-details.php",  icon:"images/map-marker.png", }
-				
+
 				];
 
             /* Map Center Location - From Theme Options */
@@ -366,6 +366,6 @@
         }
 
         google.maps.event.addDomListener(window, 'load', PropertiesMap);
-    </script> 
+    </script>
 </body>
 </html>
