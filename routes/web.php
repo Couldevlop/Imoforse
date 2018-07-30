@@ -47,3 +47,9 @@ Route::get('/agents', function () {
 Route::get('/agentDetails', function () {
     return view('agent-detail');
 });
+Route::get('/galerie', function () {
+    return view('gallery');
+});
+Route::get('/blog', function () {
+    return view('blog');
+});

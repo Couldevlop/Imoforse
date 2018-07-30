@@ -4,7 +4,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Imoforse</title>
+<title>Galérie - Imoforse</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -14,17 +14,18 @@
 <meta name="format-detection" content="telephone=no">
 <!-- CSS
   ================================================== -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-<link href="plugins/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
-<link href="plugins/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/bootstrap.css') }} " rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/prettyphoto/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/owl-carousel/css/owl.carousel.css') }} " rel="stylesheet" type="text/css">
+<link href=" {{ asset('/plugins/owl-carousel/css/owl.theme.css')}} " rel="stylesheet" type="text/css">
+
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href="colors/color9.css" rel="stylesheet" type="text/css">
+<link href="{{ asset('/colors/color9.css') }}" rel="stylesheet" type="text/css">
 <!-- SCRIPTS
   ================================================== -->
-<script src="js/modernizr.js"></script><!-- Modernizr -->
+<script src="{{ asset('/js/modernizr.js') }}"></script><!-- Modernizr -->
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -45,7 +46,7 @@
                   <li><a href="edit-agent-profile.php">My Profile</a></li>
                 </ul>
               </li>
-              <li><a href="login.php"><i class="fa fa-check-circle"></i> Register</a></li>
+              <li><a href="{{ url('/login') }}"><i class="fa fa-check-circle"></i> Connexion</a></li>
               </ul>
           </div>
           <div class="col-md-8 col-sm-6">
@@ -62,7 +63,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-8 col-xs-8">
-            <h1 class="logo"> <a href="index.php"><img src="images/logo.png" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="{{ url('/') }}"><img src="{{ asset('/images/logo.png') }}" alt="Logo"></a> </h1>
           </div>
           <div class="col-md-8 col-sm-4 col-xs-4">
               <div class="contact-info-blocks hidden-sm hidden-xs">
@@ -90,12 +91,7 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="index.php">Home</a>
-                  <ul class="dropdown">
-                    <li><a href="index.php">Version 1</a></li>
-                    <li><a href="index1.php">Version 2</a></li>
-                  </ul>
-                </li>
+                <li><a href="{{ url('/') }}">Accueil</a> </li>
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="login.php">Register as Agent</a></li>
                 <li><a href="javascript:;">Pages</a>
@@ -179,7 +175,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-12">
-                      <h1>3 Cols Gallery</h1>
+                      <h1>4 Cols Gallery</h1>
                   </div>
              </div>
          </div>
@@ -192,22 +188,28 @@
       <div class="container">
         <div class="row">
           <ul>
-            <li class="col-md-4 col-sm-6 gallery-item format-image">
+            <li class="col-md-3 col-sm-6 gallery-item format-image">
               <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
             </li>
-            <li class="col-md-4 col-sm-6 gallery-item format-image">
+            <li class="col-md-3 col-sm-6 gallery-item format-image">
               <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
             </li>
-            <li class="col-md-4 col-sm-6 gallery-item format-image">
+            <li class="col-md-3 col-sm-6 gallery-item format-image">
               <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
             </li>
-            <li class="col-md-4 col-sm-6 gallery-item format-image">
+            <li class="col-md-3 col-sm-6 gallery-item format-image">
               <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
             </li>
-            <li class="col-md-4 col-sm-6 gallery-item format-image">
+            <li class="col-md-3 col-sm-6 gallery-item format-image">
               <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
             </li>
-            <li class="col-md-4 col-sm-6 gallery-item format-image">
+            <li class="col-md-3 col-sm-6 gallery-item format-image">
+              <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
+            </li>
+            <li class="col-md-3 col-sm-6 gallery-item format-image">
+              <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
+            </li>
+            <li class="col-md-3 col-sm-6 gallery-item format-image">
               <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
             </li>
           </ul>

@@ -252,7 +252,7 @@
                               <div class="row">
                               		<div class="col-md-4 col-sm-4">
                                           <select name="type" class="form-control selectpicker">
-                                          	<option>Beds</option>
+                                          	<option>Chambres</option>
                                           	<option>1</option>
                                           	<option>2</option>
                                           	<option>3</option>

@@ -248,7 +248,7 @@
                               <span class="location">NYC</span>
                               <div class="price"><strong>$</strong><span>2800 Monthly</span></div>
                             </div>
-                            <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="beds"><strong>3</strong>Beds</span> <span class="parking"><strong>1</strong>Parking</span> </div>
+                            <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="Chambres"><strong>3</strong>Chambres</span> <span class="parking"><strong>1</strong>Parking</span> </div>
                           </div>
                         </li>
                         <li class="grid-item type-buy">
@@ -258,7 +258,7 @@
                               <span class="location">NYC</span>
                               <div class="price"><strong>$</strong><span>250000</span></div>
                             </div>
-                            <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="beds"><strong>3</strong>Beds</span> <span class="parking"><strong>1</strong>Parking</span> </div>
+                            <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="Chambres"><strong>3</strong>Chambres</span> <span class="parking"><strong>1</strong>Parking</span> </div>
                           </div>
                         </li>
                         <li class="grid-item type-rent">
@@ -268,7 +268,7 @@
                               <span class="location">NYC</span>
                               <div class="price"><strong>$</strong><span>300000</span></div>
                             </div>
-                            <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="beds"><strong>3</strong>Beds</span> <span class="parking"><strong>1</strong>Parking</span> </div>
+                            <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="Chambres"><strong>3</strong>Chambres</span> <span class="parking"><strong>1</strong>Parking</span> </div>
                           </div>
                         </li>
                       </ul>

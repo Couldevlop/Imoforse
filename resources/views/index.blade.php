@@ -42,7 +42,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="my-properties.php">Mes propriétés</a></li>
                   <li><a href=" {{ url('/submitProperty')}} ">Ajouter une propriété</a></li>
-                  <li><a href="edit-agent-profile.php">Mon profile</a></li>
+                  <li><a href="{{ url('/edit-agent-profile.php') }}">Mon profile</a></li>
                 </ul>
               </li>
               <li><a href="{{ url('/login') }}""><i class="fa fa-check-circle"></i> Connexion</a></li>
@@ -62,21 +62,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-8 col-xs-8">
-            <h1 class="logo"> <a href="index.php"><img src="images/logo.png" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="{{ url('/') }}"><img src="{{ asset('/images/logo.png') }}" alt="Logo"></a> </h1>
           </div>
           <div class="col-md-8 col-sm-4 col-xs-4">
               <div class="contact-info-blocks hidden-sm hidden-xs">
                   <div>
-                      <i class="fa fa-phone"></i> Free Line For You
-                    <span>080 378678 90</span>
+                      <i class="fa fa-phone"></i> Téléphone:
+                    <span>00225 08 57 74 64</span>
                 </div>
                   <div>
-                      <i class="fa fa-envelope"></i> Email Us
-                    <span>sales@realspaces.com</span>
+                      <i class="fa fa-envelope"></i> Email
+                    <span>infos@imoforse.com</span>
                 </div>
                   <div>
-                      <i class="fa fa-clock-o"></i> Working Hours
-                    <span>09:00 to 17:00</span>
+                      <i class="fa fa-clock-o"></i> Heures d'ouvertures
+                    <span>09:00 à 17:00</span>
                 </div>
              </div>
               <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a>
@@ -90,12 +90,7 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="{{ url('/') }}">Accueil</a>
-                  <ul class="dropdown">
-                    <li><a href="index.php">Version 1</a></li>
-                    <li><a href="index1.php">Version 2</a></li>
-                  </ul>
-                </li>
+                <li><a href="{{ url('/') }}">Accueil</a></li>
                 <li><a href="{{ url('/about') }}">A Propos</a></li>
                 <li><a href="{{ url('/login') }}">Register as Agent</a></li>
                 <li><a href="javascript:;">Pages</a>
@@ -141,28 +136,8 @@
                     <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
                   </ul>
                 </li>
-                <li><a href="javascript:;">Features</a>
-                  <ul class="dropdown">
-                    <li><a href="shortcodes.php">Shortcodes</a></li>
-                    <li><a href="typography.php">Typography</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Gallery</a>
-                  <ul class="dropdown">
-                    <li><a href="gallery-2cols.php">2 Columns</a></li>
-                    <li><a href="gallery-3cols.php">3 Columns</a></li>
-                    <li><a href="gallery-4cols.php">4 Columns</a></li>
-                    <li><a href="gallery-masonry.php">Masonry Grid</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Blog</a>
-                  <ul class="dropdown">
-                    <li><a href="blog-masonry.php">Masonry</a></li>
-                    <li><a href="blog-timeline.php">Timeline</a></li>
-                    <li><a href="blog-thumbnails.php">Classic</a></li>
-                    <li><a href="blog-post.php">Single Post</a></li>
-                  </ul>
-                </li>
+                <li><a href="{{ url('/galerie') }}">Galérie</a></li>
+                <li><a href="{{ url('/blog') }}">Blog</a> </li>
                 <li><a href="{{ url('/contact') }}">Contact</a></li>
               </ul>
             </nav>
@@ -178,7 +153,7 @@
     <!-- Start Hero Slider -->
     <div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade" data-pause="yes">
       <ul class="slides">
-        <li class=" parallax" style="background-image:url(http://placehold.it/1200x500&amp;text=IMAGE+PLACEHOLDER);">
+        <li class=" parallax" style="background-image:url({{ asset('/images/slider/01.jpg') }});">
           <div class="flex-caption">
               <strong class="title">1671 Grand Avenue, <em>NYC</em></strong>
              <div class="price"><strong>$</strong><span>100000</span></div>
@@ -189,7 +164,7 @@
              </div>
           </div>
         </li>
-        <li class="parallax" style="background-image:url(http://placehold.it/1200x500&amp;text=IMAGE+PLACEHOLDER);">
+        <li class="parallax" style="background-image:url('/images/slider/02.jpg');">
           <div class="flex-caption">
               <strong class="title">1671 Grand Avenue, <em>NYC</em></strong>
              <div class="price"><strong>$</strong><span>100000</span></div> <a href="property-detail.php" class="btn btn-primary btn-block">Details</a>
@@ -214,16 +189,16 @@
                         <option selected>Type</option>
                       	<option>Villa</option>
                       	<option>Family House</option>
-                      	<option>Single Home</option>
+                      	<option>Studio</option>
                       	<option>Cottage</option>
-                      	<option>Apartment</option>
+                      	<option>Appartement</option>
                     </select>
                 </div>
                 <div class="col-md-3">
                     <select name="propery contract type" class="form-control input-lg selectpicker">
                         <option selected>Contract</option>
-                      <option>Rent</option>
-                      <option>Buy</option>
+                      <option>Louer</option>
+                      <option>Acheter</option>
                     </select>
                 </div>
                 <div class="col-md-3">
@@ -232,8 +207,8 @@
                       <option>New York</option>
                     </select>
                 </div>
-                <div class="col-md-2"> <button type="submit" class="btn btn-primary btn-block btn-lg"><i class="fa fa-search"></i> Search</button> </div>
-                <div class="col-md-2"> <a href="#" id="ads-trigger" class="btn btn-default btn-block"><i class="fa fa-plus"></i> <span>Advanced</span></a> </div>
+                <div class="col-md-2"> <button type="submit" class="btn btn-primary btn-block btn-lg"><i class="fa fa-search"></i> Chercher</button> </div>
+                <div class="col-md-2"> <a href="#" id="ads-trigger" class="btn btn-default btn-block"><i class="fa fa-plus"></i> <span>Avancée</span></a> </div>
               </div>
               <div class="row hidden-xs hidden-sm">
                 <div class="col-md-2">
@@ -322,15 +297,15 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 col-sm-4 featured-block"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt="Search Anywhere" class="img-thumbnail">
-              <h3>Search From Anywhere</h3>
+              <h3>Rechercher un bien</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
             </div>
             <div class="col-md-4 col-sm-4 featured-block"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt="Friendly Agents" class="img-thumbnail">
-              <h3>Friendly Agents</h3>
+              <h3>Agents amicaux</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
             </div>
             <div class="col-md-4 col-sm-4 featured-block"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt="Search Anywhere" class="img-thumbnail">
-              <h3>Buy or Rent</h3>
+              <h3>Acheter ou louer</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
             </div>
           </div>
@@ -342,8 +317,8 @@
           <div class="property-columns" id="latest-properties">
               <div class="col-md-12">
                 <div class="block-heading">
-                  <h4><span class="heading-icon"><i class="fa fa-leaf"></i></span>Recently Listed</h4>
-                  <a href="simple-listing-fw.php" class="btn btn-primary btn-sm pull-right">View more properties <i class="fa fa-long-arrow-right"></i></a>
+                  <h4><span class="heading-icon"><i class="fa fa-leaf"></i></span>Annonces récentes</h4>
+                  <a href="simple-listing-fw.php" class="btn btn-primary btn-sm pull-right">Voir plus de propriétés <i class="fa fa-long-arrow-right"></i></a>
                 </div>
               </div>
               <ul>
@@ -352,7 +327,7 @@
                           <a href="property-detail.php" class="property-featured-image">
                               <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                              <span class="badges">Rent</span>
+                              <span class="badges">Louer</span>
                           </a>
                       <div class="property-info">
                               <h4><a href="property-detail.php">116 Waverly Place</a></h4>
@@ -360,9 +335,9 @@
                               <div class="price"><strong>$</strong><span>2800 Monthly</span></div>
                       </div>
                       <div class="property-amenities clearfix">
-                              <span class="area"><strong>5000</strong>Area</span>
-                              <span class="baths"><strong>3</strong>Baths</span>
-                              <span class="beds"><strong>3</strong>Beds</span>
+                              <span class="area"><strong>5000</strong>m2</span>
+                              <span class="baths"><strong>3</strong>Douches</span>
+                              <span class="beds"><strong>3</strong>Chambres</span>
                               <span class="parking"><strong>1</strong>Parking</span>
                           </div>
                       </div>
@@ -372,7 +347,7 @@
                           <a href="property-detail.php" class="property-featured-image">
                           <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                              <span class="badges">Buy</span>
+                              <span class="badges">Acheter</span>
                           </a>
                       <div class="property-info">
                               <h4><a href="property-detail.php">232 East 63rd Street</a></h4>
@@ -392,7 +367,7 @@
                           <a href="property-detail.php" class="property-featured-image">
                               <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                              <span class="badges">Buy</span>
+                              <span class="badges">Acheter</span>
                       </a>
                       <div class="property-info">
                               <h4><a href="property-detail.php">55 Warren Street</a></h4>
@@ -412,7 +387,7 @@
                       <a href="property-detail.php" class="property-featured-image">
                           <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
                           <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                          <span class="badges">Rent</span>
+                          <span class="badges">Louer</span>
                           </a>
                       <div class="property-info">
                               <h4><a href="property-detail.php">459 West Broadway</a></h4>
@@ -432,7 +407,7 @@
                       <a href="property-detail.php" class="property-featured-image">
                               <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                              <span class="badges">Buy</span>
+                              <span class="badges">Acheter</span>
                           </a>
                       <div class="property-info">
                               <h4><a href="property-detail.php">70 Greene Street</a></h4>
@@ -452,7 +427,7 @@
                       <a href="property-detail.php" class="property-featured-image">
                           <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                              <span class="badges">Rent</span>
+                              <span class="badges">Louer</span>
                           </a>
                       <div class="property-info">
                               <h4><a href="property-detail.php">115 Allen Street</a></h4>
@@ -476,7 +451,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="block-heading">
-                <h4><span class="heading-icon"><i class="fa fa-star"></i></span>Featured Properties</h4>
+                <h4><span class="heading-icon"><i class="fa fa-star"></i></span>Propriétés en vedette</h4>
               </div>
             </div>
           </div>
@@ -562,7 +537,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-4 col-sm-4 features-list column">
-                      <h3>Theme features</h3>
+                      <h3>Pourquoi nous choisir ?</h3>
                     <ul>
                       <li>
                               <div class="icon"><i class="fa fa-umbrella"></i></div>
@@ -595,7 +570,7 @@
                     </ul>
                 </div>
                   <div class="col-md-4 col-sm-4 popular-agent column">
-                      <h3>Popular Agent</h3>
+                      <h3>Nos Agents</h3>
                     <a href="agent-detail.php"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a>
                     <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-6">
@@ -611,7 +586,7 @@
                     </div>
                 </div>
                   <div class="col-md-4 col-sm-4 latest-testimonials column">
-                      <h3>Client Testimonials</h3>
+                      <h3>Témoignages</h3>
                     <ul class="testimonials">
                       <li>
                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>

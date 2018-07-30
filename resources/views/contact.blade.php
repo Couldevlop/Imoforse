@@ -90,12 +90,7 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="{{ url('/') }}">Accueil</a>
-                  <ul class="dropdown">
-                    <li><a href="{{ url('/') }}">Version 1</a></li>
-                    <li><a href="index1.php">Version 2</a></li>
-                  </ul>
-                </li>
+                <li><a href="{{ url('/') }}">Accueil</a></li>
                 <li><a href="{{ url('/about') }}">A Propos</a></li>
                 <li><a href="{{ url('/login') }}">Register as Agent</a></li>
                 <li><a href="javascript:;">Pages</a>
@@ -140,29 +135,8 @@
                     <li><a href="property-detail.php">Single Property</a></li>
                     <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
                   </ul>
-                </li>
-                <li><a href="javascript:;">Features</a>
-                  <ul class="dropdown">
-                    <li><a href="shortcodes.php">Shortcodes</a></li>
-                    <li><a href="typography.php">Typography</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Gallery</a>
-                  <ul class="dropdown">
-                    <li><a href="gallery-2cols.php">2 Columns</a></li>
-                    <li><a href="gallery-3cols.php">3 Columns</a></li>
-                    <li><a href="gallery-4cols.php">4 Columns</a></li>
-                    <li><a href="gallery-masonry.php">Masonry Grid</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Blog</a>
-                  <ul class="dropdown">
-                    <li><a href="blog-masonry.php">Masonry</a></li>
-                    <li><a href="blog-timeline.php">Timeline</a></li>
-                    <li><a href="blog-thumbnails.php">Classic</a></li>
-                    <li><a href="blog-post.php">Single Post</a></li>
-                  </ul>
-                </li>
+                </li><li><a href="{{ url('/gallery') }}">Galérie</a> </li>
+                <li><a href="{{ url('/blog') }}">Blog</a></li>
                 <li><a href="{{ url('/contact') }}">Contact</a></li>
               </ul>
             </nav>
@@ -187,24 +161,24 @@
         <div class="page">
           <div class="row">
             <div class="col-md-6 col-sm-6">
-              <h3>Quick Contact Form</h3>
+              <h3>Laissez nous un message</h3>
               <div class="row">
                 <form method="post" id="contactform" name="contactform" class="contact-form" action="mail/contact.php">
                   <div class="col-md-6 margin-15">
                     <div class="form-group">
-                      <input type="text" id="name" name="name"  class="form-control input-lg" placeholder="Name*">
+                      <input type="text" id="name" name="name"  class="form-control input-lg" placeholder="Nom complet*">
                     </div>
                     <div class="form-group">
                       <input type="email" id="email" name="email"  class="form-control input-lg" placeholder="Email*">
                     </div>
                     <div class="form-group">
-                      <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="Phone">
+                      <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="Téléphone">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <textarea cols="6" rows="5" id="comments" name="comments" class="form-control input-lg" placeholder="Message"></textarea>
-                      <input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg btn-block" value="Submit now!">
+                      <input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg btn-block" value="Envoyer">
                     </div>
                   </div>
                 </form>

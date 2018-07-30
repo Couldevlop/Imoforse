@@ -4,7 +4,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Imoforse</title>
+<title>Blog - Imoforse</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -62,7 +62,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-8 col-xs-8">
-            <h1 class="logo"> <a href="index.php"><img src="images/logo.png" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="{{ url('/') }}"><img src="{{ asset ('/images/logo.png') }}" alt="Logo"></a> </h1>
           </div>
           <div class="col-md-8 col-sm-4 col-xs-4">
               <div class="contact-info-blocks hidden-sm hidden-xs">
@@ -90,13 +90,8 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="index.php">Home</a>
-                  <ul class="dropdown">
-                    <li><a href="index.php">Version 1</a></li>
-                    <li><a href="index1.php">Version 2</a></li>
-                  </ul>
-                </li>
-                <li><a href="about.php">About Us</a></li>
+                <li><a href="{{ url('/') }}">Accueil</a></li>
+                <li><a href="about.php">A propos</a></li>
                 <li><a href="login.php">Register as Agent</a></li>
                 <li><a href="javascript:;">Pages</a>
                   <ul class="dropdown">
@@ -140,30 +135,9 @@
                     <li><a href="property-detail.php">Single Property</a></li>
                     <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
                   </ul>
-                </li>
-                <li><a href="javascript:;">Features</a>
-                  <ul class="dropdown">
-                    <li><a href="shortcodes.php">Shortcodes</a></li>
-                    <li><a href="typography.php">Typography</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Gallery</a>
-                  <ul class="dropdown">
-                    <li><a href="gallery-2cols.php">2 Columns</a></li>
-                    <li><a href="gallery-3cols.php">3 Columns</a></li>
-                    <li><a href="gallery-4cols.php">4 Columns</a></li>
-                    <li><a href="gallery-masonry.php">Masonry Grid</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Blog</a>
-                  <ul class="dropdown">
-                    <li><a href="blog-masonry.php">Masonry</a></li>
-                    <li><a href="blog-timeline.php">Timeline</a></li>
-                    <li><a href="blog-thumbnails.php">Classic</a></li>
-                    <li><a href="blog-post.php">Single Post</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.php">Contact</a></li>
+                </li> <li><a href="{{ url('/galerie') }}">Galérie</a> </li>
+                <li><a href="{{ url('/blog') }}">Blog</a> </li>
+                <li><a href="{{ url('/contact') }}">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -179,7 +153,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-12">
-                      <h1>Masonry Gallery</h1>
+                      <h1>Thumbnails Blog</h1>
                   </div>
              </div>
          </div>
@@ -191,47 +165,77 @@
     <div id="content" class="content full">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <ul class="grid-holder col-3">
-              <li class="grid-item post format-image">
-                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-              </li>
-              <li class="grid-item post format-image">
-                <div class="grid-item-inner"> <a href="http://placehold.it/431x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/431x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-              </li>
-              <li class="grid-item post format-image">
-                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-              </li>
-              <li class="grid-item post format-image">
-                <div class="grid-item-inner"> <a href="http://placehold.it/431x600&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/431x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-              </li>
-              <li class="grid-item post format-image">
-                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-              </li>
-              <li class="grid-item post format-image">
-                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-              </li>
-              <li class="grid-item post format-image">
-                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-              </li>
-              <li class="grid-item post format-image">
-                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-              </li>
-              <li class="grid-item post format-image">
-                <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-              </li>
+          <div class="col-md-9 posts-archive">
+            <article class="post">
+              <div class="row">
+                <div class="col-md-4 col-sm-4"> <a href="blog-post.php"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a> </div>
+                <div class="col-md-8 col-sm-8">
+                  <h3><a href="single-event.php">A sample post title</a></h3>
+                  <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> 28th Jan, 2014</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                  <p><a href="#" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                </div>
+              </div>
+            </article>
+            <article class="post">
+              <div class="row">
+                <div class="col-md-4 col-sm-4"> <a href="single-event.php"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a> </div>
+                <div class="col-md-8 col-sm-8">
+                  <h3><a href="single-event.php">A sample post title</a></h3>
+                  <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> 28th Jan, 2014</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                  <p><a href="#" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                </div>
+              </div>
+            </article>
+            <article class="post format-image">
+              <div class="row">
+                <div class="col-md-4 col-sm-4"> <a href="single-event.php"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a> </div>
+                <div class="col-md-8 col-sm-8">
+                  <h3><a href="single-event.php">A sample post title</a></h3>
+                  <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> 28th Jan, 2014</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                  <p><a href="#" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                </div>
+              </div>
+            </article>
+            <ul class="pagination">
+              <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
             </ul>
-            <!-- Pagination -->
-            <div class="text-align-center">
-              <ul class="pagination">
-                <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+          </div>
+          <!-- Start Sidebar -->
+          <div class="col-md-3 sidebar">
+            <div class="widget sidebar-widget search-form-widget">
+                  <h3 class="widgettitle">Search the Blog</h3>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Search Posts...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search fa-lg"></i></button>
+                  </span>
+                </div>
+            </div>
+            <div class="widget sidebar-widget">
+              <div class="sidebar-widget-title">
+                <h3 class="widgettitle">Post Categories</h3>
+              </div>
+              <ul>
+                <li><a href="#">Faith</a> (10)</li>
+                <li><a href="#">Missions</a> (12)</li>
+                <li><a href="#">Salvation</a> (34)</li>
+                <li><a href="#">Worship</a> (14)</li>
               </ul>
+            </div>
+            <div class="widget sidebar-widget">
+              <div class="sidebar-widget-title">
+                <h3 class="widgettitle">Post Tags</h3>
+              </div>
+              <div class="tag-cloud"> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> </div>
             </div>
           </div>
         </div>
