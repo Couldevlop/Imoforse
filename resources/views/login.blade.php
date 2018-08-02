@@ -141,28 +141,8 @@
                     <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
                   </ul>
                 </li>
-                <li><a href="javascript:;">Features</a>
-                  <ul class="dropdown">
-                    <li><a href="shortcodes.php">Shortcodes</a></li>
-                    <li><a href="typography.php">Typography</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Gallery</a>
-                  <ul class="dropdown">
-                    <li><a href="gallery-2cols.php">2 Columns</a></li>
-                    <li><a href="gallery-3cols.php">3 Columns</a></li>
-                    <li><a href="gallery-4cols.php">4 Columns</a></li>
-                    <li><a href="gallery-masonry.php">Masonry Grid</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Blog</a>
-                  <ul class="dropdown">
-                    <li><a href="blog-masonry.php">Masonry</a></li>
-                    <li><a href="blog-timeline.php">Timeline</a></li>
-                    <li><a href="blog-thumbnails.php">Classic</a></li>
-                    <li><a href="blog-post.php">Single Post</a></li>
-                  </ul>
-                </li>
+                <li><a href="{{ url('/galerie')}}">Galérie</a></li>
+                <li><a href="{{ url('/blog')}}">Blog</a></li>
                 <li><a href="{{ url('/contact') }}">Contact</a></li>
               </ul>
             </nav>
@@ -321,10 +301,10 @@
 <script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script>
 <script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js') }}"></script>
-<script src="{{ asset('/js/helper-plugins.js') }}"></script>
-<script src="{{ asset('/js/bootstrap.js') }}"></script>
+<script src="{{ asset('/js/helper-plugins.js') }}"></script> 
+<script src="{{ asset('/js/bootstrap.js') }}"></script> 
 <script src="{{ asset('/js/waypoints.js') }}"></script>
-<script src="{{ asset('/js/init.js') }}"></script> <!-- All Scripts -->
+<script src="{{ asset('/js/init.js') }}"></script>
 <!--[if lte IE 9]><script src="js/script_ie.js"></script><![endif]-->
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script> <!-- Google Map -->
 <script type="text/javascript">

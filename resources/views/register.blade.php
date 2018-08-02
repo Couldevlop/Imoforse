@@ -4,7 +4,7 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Imoforse</title>
+<title>Connexion - Imoforse</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -14,17 +14,17 @@
 <meta name="format-detection" content="telephone=no">
 <!-- CSS
   ================================================== -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-<link href="plugins/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
-<link href="plugins/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/prettyphoto/css/prettyPhoto.css)}}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/owl-carousel/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/owl-carousel/css/owl.theme.css') }}" rel="stylesheet" type="text/css">
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href="colors/color9.css" rel="stylesheet" type="text/css">
+<link href="{{ asset('/colors/color9.css') }}" rel="stylesheet" type="text/css">
 <!-- SCRIPTS
   ================================================== -->
-<script src="js/modernizr.js"></script><!-- Modernizr -->
+<script src="{{ asset('/js/modernizr.js') }}"></script><!-- Modernizr -->
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -40,12 +40,12 @@
             <ul class="horiz-nav pull-left">
               <li class="dropdown"><a data-toggle="dropdown"><i class="fa fa-user"></i> Mon compte <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="my-properties.php">My properties</a></li>
-                  <li><a href="{{ url('/submitProperty') }}">Add a property</a></li>
-                  <li><a href="edit-agent-profile.php">My Profile</a></li>
+                  <li><a href="{{ url('/myProperties') }}">Mes propriétés</a></li>
+                  <li><a href="{{ url('/submitProperty') }}">Ajouter une propriété</a></li>
+                  <li><a href="{{ url('/editAgentProfile') }}">Mon profile</a></li>
                 </ul>
               </li>
-              <li><a href="{{ url('/login') }}"><i class="fa fa-check-circle"></i> Register</a></li>
+              <li><a href="{{ url('/login') }}"><i class="fa fa-check-circle"></i> Connexion</a></li>
               </ul>
           </div>
           <div class="col-md-8 col-sm-6">
@@ -62,7 +62,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-8 col-xs-8">
-            <h1 class="logo"> <a href="{{ url('/') }}"><img src="images/logo.png" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="{{ url('/') }}"><img src="{{ asset('/images/logo.png') }}" alt="Imoforse Logo"></a> </h1>
           </div>
           <div class="col-md-8 col-sm-4 col-xs-4">
               <div class="contact-info-blocks hidden-sm hidden-xs">
@@ -90,13 +90,8 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="{{ url('/') }}">Accueil</a>
-                  <ul class="dropdown">
-                    <li><a href="index.php">Version 1</a></li>
-                    <li><a href="index1.php">Version 2</a></li>
-                  </ul>
-                </li>
-                <li><a href="about.php">About Us</a></li>
+                <li><a href="{{ url('/') }}">Accueil</a></li>
+                <li><a href="{{ url('/about')}}">A propos</a></li>
                 <li><a href="login.php">Register as Agent</a></li>
                 <li><a href="javascript:;">Pages</a>
                   <ul class="dropdown">
@@ -141,29 +136,9 @@
                     <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
                   </ul>
                 </li>
-                <li><a href="javascript:;">Features</a>
-                  <ul class="dropdown">
-                    <li><a href="shortcodes.php">Shortcodes</a></li>
-                    <li><a href="typography.php">Typography</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Gallery</a>
-                  <ul class="dropdown">
-                    <li><a href="gallery-2cols.php">2 Columns</a></li>
-                    <li><a href="gallery-3cols.php">3 Columns</a></li>
-                    <li><a href="gallery-4cols.php">4 Columns</a></li>
-                    <li><a href="gallery-masonry.php">Masonry Grid</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Blog</a>
-                  <ul class="dropdown">
-                    <li><a href="blog-masonry.php">Masonry</a></li>
-                    <li><a href="blog-timeline.php">Timeline</a></li>
-                    <li><a href="blog-thumbnails.php">Classic</a></li>
-                    <li><a href="blog-post.php">Single Post</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="{{ url('/galerie')}}">Galérie</a></li>
+                <li><a href="{{ url('/blog')}}">Blog</a></li>
+                <li><a href="{{ url('/contact')}}">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -299,14 +274,14 @@
   <!-- End Site Footer -->
   <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
-<script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call -->
-<script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
-<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel -->
-<script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
-<script src="js/helper-plugins.js"></script> <!-- Plugins -->
-<script src="js/bootstrap.js"></script> <!-- UI -->
-<script src="js/waypoints.js"></script> <!-- Waypoints -->
-<script src="js/init.js"></script> <!-- All Scripts -->
+<script src="{{ asset('/js/jquery-2.0.0.min.js') }}"></script>
+<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script>
+<script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js') }}"></script>
+<script src="{{ asset('/js/helper-plugins.js') }}"></script> 
+<script src="{{ asset('/js/bootstrap.js') }}"></script> 
+<script src="{{ asset('/js/waypoints.js') }}"></script>
+<script src="{{ asset('/js/init.js') }}"></script> 
 <!--[if lte IE 9]><script src="js/script_ie.js"></script><![endif]-->
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script> <!-- Google Map -->
 <script type="text/javascript">
