@@ -8,23 +8,38 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<!-- Mobile Specific Metas
-  ================================================== -->
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-<!-- CSS
-  ================================================== -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-<link href="plugins/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
-<link href="plugins/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
+
+<link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/prettyphoto/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/owl-carousel/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/owl-carousel/css/owl.theme.css') }}" rel="stylesheet" type="text/css">
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href="colors/color9.css" rel="stylesheet" type="text/css">
+<link href="{{ asset('/colors/color9.css') }}" rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/app/apple-icon-57x57.png') }}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/app/apple-icon-60x60.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/app/apple-icon-72x72.png') }}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/app/apple-icon-76x76.png') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/app/apple-icon-114x114.png') }}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/app/apple-icon-120x120.png') }}">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/app/apple-icon-144x144.png') }}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/app/apple-icon-152x152.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/app/apple-icon-180x180.png') }}">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('images/app/android-icon-192x192.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/app/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/app/favicon-96x96.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/app/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ asset('images/app/manifest.json') }}">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{{ asset('images/app/ms-icon-144x144.png') }}">
+<meta name="theme-color" content="#ffffff">
 <!-- SCRIPTS
   ================================================== -->
-<script src="js/modernizr.js"></script><!-- Modernizr -->
+<script src="{{ asset('/js/modernizr.js') }}"></script><!-- Modernizr -->
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -38,14 +53,14 @@
         <div class="row">
           <div class="col-md-4 col-sm-6">
             <ul class="horiz-nav pull-left">
-              <li class="dropdown"><a data-toggle="dropdown"><i class="fa fa-user"></i> Login <b class="caret"></b></a>
+              <li class="dropdown"><a data-toggle="dropdown"><i class="fa fa-user"></i> Mon compte <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="my-properties.php">My properties</a></li>
-                  <li><a href="submit.php">Add a property</a></li>
+                  <li><a href="{{ url('/my-properties') }}">My properties</a></li>
+                  <li><a href="{{ url('/submit') }}">Ajouter une propriété</a></li>
                   <li><a href="edit-agent-profile.php">My Profile</a></li>
                 </ul>
               </li>
-              <li><a href="login.php"><i class="fa fa-check-circle"></i> Register</a></li>
+              <li><a href="{{ url('/login')}}"><i class="fa fa-check-circle"></i> Connexion</a></li>
               </ul>
           </div>
           <div class="col-md-8 col-sm-6">
@@ -67,16 +82,16 @@
           <div class="col-md-8 col-sm-4 col-xs-4">
               <div class="contact-info-blocks hidden-sm hidden-xs">
                   <div>
-                      <i class="fa fa-phone"></i> Free Line For You
-                    <span>080 378678 90</span>
+                      <i class="fa fa-phone"></i> Téléphone:
+                    <span>00225 08 57 74 64</span>
                 </div>
                   <div>
-                      <i class="fa fa-envelope"></i> Email Us
-                    <span>sales@realspaces.com</span>
+                      <i class="fa fa-envelope"></i> Email
+                    <span>infos@imoforse.com</span>
                 </div>
                   <div>
-                      <i class="fa fa-clock-o"></i> Working Hours
-                    <span>09:00 to 17:00</span>
+                      <i class="fa fa-clock-o"></i> Heures d'ouvertures
+                    <span>09:00 à 17:00</span>
                 </div>
              </div>
               <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a>
@@ -91,52 +106,12 @@
             <nav class="navigation">
               <ul class="sf-menu">
                 <li><a href="{{ url('/') }}">Accueil</a></li>
-                <li><a href="about.php">A propos</a></li>
-                <li><a href="login.php">Register as Agent</a></li>
-                <li><a href="javascript:;">Pages</a>
-                  <ul class="dropdown">
-                    <li><a href="agents.php">Agents</a></li>
-                    <li><a href="agent-detail.php">Agent Single</a></li>
-                    <li><a href="my-properties.php">Agent Properties</a></li>
-                    <li><a href="submit.php">List a property</a></li>
-                    <li><a href="pricing.php">Pricing</a></li>
-                    <li><a href="login.php">Register/Login</a></li>
-                    <li><a href="404.php">404</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Properties</a>
-                  <ul class="dropdown">
-                    <li><a href="javascript:;">Listing</a>
-                      <ul>
-                          <li><a href="simple-listing.php">Simple Listing</a></li>
-                          <li><a href="listing-map.php">Simple Listing with map</a></li>
-                          <li><a href="simple-listing-fw.php">Full Width Listing</a></li>
-                          <li><a href="grid-listing.php">Grid Listing</a></li>
-                          <li><a href="grid-map.php">Grid Listing with map</a></li>
-                          <li><a href="grid-listing-fw.php">Full Width Grid</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:;">Types</a>
-                      <ul>
-                          <li><a href="property-type.php">Villa</a></li>
-                          <li><a href="property-type.php">Single Home</a></li>
-                          <li><a href="property-type.php">Cottage</a></li>
-                          <li><a href="property-type.php">Family House</a></li>
-                          <li><a href="property-type.php">Apartment</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:;">Contract type</a>
-                      <ul>
-                          <li><a href="contract-type.php">Sale</a></li>
-                          <li><a href="contract-type.php">Rent</a></li>
-                          <li><a href="contract-type.php">Sold</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="property-detail.php">Single Property</a></li>
-                    <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
-                  </ul>
-                </li> <li><a href="{{ url('/galerie') }}">Galérie</a> </li>
-                <li><a href="{{ url('/blog') }}">Blog</a> </li>
+                <li><a href="{{ url('/about') }}">A Propos</a></li>
+                <li><a href="{{ url('/propertyType') }}">Achat/Location</a></li>
+                <li><a href="{{ url('/propertyType') }}">Location Saisonnière</a> </li>
+                <li><a href="{{ url('/propertyType') }}">Achat de terrain</a> </li>
+                <li><a href="{{ url('/galerie') }}">Galérie</a> </li>
+                <li><a href="{{ url('/blog') }}">Blog</a></li>
                 <li><a href="{{ url('/contact') }}">Contact</a></li>
               </ul>
             </nav>
@@ -149,11 +124,11 @@
   <!-- Site Showcase -->
   <div class="site-showcase">
     <!-- Start Page Header -->
-    <div class="parallax page-header" style="background-image:url(http://placehold.it/1200x260&amp;text=IMAGE+PLACEHOLDER);">
+    <div class="parallax page-header" style="background-image:url('images/banner/1200x260.png');">
           <div class="container">
               <div class="row">
                   <div class="col-md-12">
-                      <h1>Thumbnails Blog</h1>
+                      <h1>Blog</h1>
                   </div>
              </div>
          </div>
@@ -168,12 +143,12 @@
           <div class="col-md-9 posts-archive">
             <article class="post">
               <div class="row">
-                <div class="col-md-4 col-sm-4"> <a href="blog-post.php"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a> </div>
+                <div class="col-md-4 col-sm-4"> <a href="blog-post.php"><img src="{{ asset('images/600x400.png') }}" alt="" class="img-thumbnail"></a> </div>
                 <div class="col-md-8 col-sm-8">
                   <h3><a href="single-event.php">A sample post title</a></h3>
                   <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> 28th Jan, 2014</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  <p><a href="#" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                  <p><a href="#" class="btn btn-primary">Lire la suite <i class="fa fa-long-arrow-right"></i></a></p>
                 </div>
               </div>
             </article>
@@ -184,7 +159,7 @@
                   <h3><a href="single-event.php">A sample post title</a></h3>
                   <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> 28th Jan, 2014</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  <p><a href="#" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                  <p><a href="#" class="btn btn-primary">Lire la suite <i class="fa fa-long-arrow-right"></i></a></p>
                 </div>
               </div>
             </article>
@@ -195,7 +170,7 @@
                   <h3><a href="single-event.php">A sample post title</a></h3>
                   <span class="post-meta meta-data"> <span><i class="fa fa-calendar"></i> 28th Jan, 2014</span><span><i class="fa fa-archive"></i> <a href="#">Uncategorized</a></span> <span><a href="#"><i class="fa fa-comment"></i> 12</a></span></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                  <p><a href="#" class="btn btn-primary">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
+                  <p><a href="#" class="btn btn-primary">Lire la suite <i class="fa fa-long-arrow-right"></i></a></p>
                 </div>
               </div>
             </article>
@@ -212,9 +187,9 @@
           <!-- Start Sidebar -->
           <div class="col-md-3 sidebar">
             <div class="widget sidebar-widget search-form-widget">
-                  <h3 class="widgettitle">Search the Blog</h3>
+                  <h3 class="widgettitle">Rechercher</h3>
                 <div class="input-group input-group-lg">
-                    <input type="text" class="form-control" placeholder="Search Posts...">
+                    <input type="text" class="form-control" placeholder="Rechercher...">
                     <span class="input-group-btn">
                         <button class="btn btn-default" type="button"><i class="fa fa-search fa-lg"></i></button>
                   </span>
@@ -222,7 +197,7 @@
             </div>
             <div class="widget sidebar-widget">
               <div class="sidebar-widget-title">
-                <h3 class="widgettitle">Post Categories</h3>
+                <h3 class="widgettitle">Categories</h3>
               </div>
               <ul>
                 <li><a href="#">Faith</a> (10)</li>
@@ -233,7 +208,7 @@
             </div>
             <div class="widget sidebar-widget">
               <div class="sidebar-widget-title">
-                <h3 class="widgettitle">Post Tags</h3>
+                <h3 class="widgettitle">Tags</h3>
               </div>
               <div class="tag-cloud"> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> <a href="#">Faith</a> <a href="#">Heart</a> <a href="#">Love</a> <a href="#">Praise</a> <a href="#">Sin</a> <a href="#">Soul</a> <a href="#">Missions</a> <a href="#">Worship</a> </div>
             </div>
@@ -247,7 +222,7 @@
       <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-6 footer-widget widget">
-                <h3 class="widgettitle">Latest News</h3>
+                <h3 class="widgettitle">Imoforse</h3>
                   <ul>
                       <li>
                           <a href="blog-post.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
@@ -264,7 +239,7 @@
                   </ul>
               </div>
             <div class="col-md-3 col-sm-6 footer-widget widget">
-                <h3 class="widgettitle">Useful Links</h3>
+                <h3 class="widgettitle">Liens utiles</h3>
                <ul>
                 <li><a href="submit.php">Add your listing</a></li>
                 <li><a href="login.php">Become an agent</a></li>
@@ -274,15 +249,28 @@
                </ul>
            </div>
             <div class="col-md-3 col-sm-6 footer-widget widget">
-              <h3 class="widgettitle">Twitter Updates</h3>
-                  <ul class="twitter-widget"></ul>
+              <h3 class="widgettitle">Aricles récents</h3>
+                  <ul>
+                      <li>
+                          <a href="blog-post.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                          <span class="meta-data">1 March, 2014</span>
+                      </li>
+                      <li>
+                      <a href="blog-post.php">Lorem ipsum dolor sit amet elit, consectetur adipiscing.</a>
+                          <span class="meta-data">28 February, 2014</span>
+                      </li>
+                      <li>
+                      <a href="blog-post.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                          <span class="meta-data">26 February, 2014</span>
+                      </li>
+                  </ul>
            </div>
             <div class="col-md-3 col-sm-6 footer-widget widget">
-                <h3 class="widgettitle">Our Newsletter</h3>
+                <h3 class="widgettitle">Newsletter</h3>
                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
                	<form method="post" id="newsletterform" name="newsletterform" class="newsletter-form" action="mail/newsletter.php">
-                  	<input type="email" name="nl-email" id="nl-email" placeholder="Enter your email" class="form-control">
-                  	<input type="submit" name="nl-submit" id="nl-submit" class="btn btn-primary btn-block btn-lg" value="Subscribe">
+                  	<input type="email" name="nl-email" id="nl-email" placeholder="Entrer votre email" class="form-control">
+                  	<input type="submit" name="nl-submit" id="nl-submit" class="btn btn-primary btn-block btn-lg" value="S'Abonner">
                	</form>
               	<div class="clearfix"></div>
               	<div id="nl-message"></div>

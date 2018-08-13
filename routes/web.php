@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/register', function () {
+    return view('register');
+});
 Route::get('/about', function () {
     return view('about');
 });
@@ -29,7 +32,7 @@ Route::get('/submitProperty', function () {
 Route::get('/listingMap', function () {
     return view('listing-map');
 });
-Route::get('/myPropreties', function () {
+Route::get('/myProperties', function () {
     return view('my-properties');
 });
 Route::get('/editAgentProfile', function () {
@@ -52,4 +55,16 @@ Route::get('/galerie', function () {
 });
 Route::get('/blog', function () {
     return view('blog');
+})
+;Route::get('/submit', function () {
+    return view('submit');
+});
+;Route::get('/propertyDetail', function () {
+    return view('property-detail');
+});
+;Route::get('/agentDetail', function () {
+    return view('agent-detail');
+});
+;Route::get('/propertyType', function () {
+    return view('property-type');
 });

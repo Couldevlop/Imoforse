@@ -8,12 +8,9 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<!-- Mobile Specific Metas
-  ================================================== -->
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-<!-- CSS
-  ================================================== -->
+
 <link href="{{ asset('/css/bootstrap.css') }} " rel="stylesheet" type="text/css">
 <link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('/plugins/prettyphoto/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
@@ -22,6 +19,24 @@
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
 <link href=" {{ asset('/colors/color9.css')}} " rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/app/apple-icon-57x57.png') }}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/app/apple-icon-60x60.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/app/apple-icon-72x72.png') }}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/app/apple-icon-76x76.png') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/app/apple-icon-114x114.png') }}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/app/apple-icon-120x120.png') }}">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/app/apple-icon-144x144.png') }}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/app/apple-icon-152x152.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/app/apple-icon-180x180.png') }}">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('images/app/android-icon-192x192.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/app/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/app/favicon-96x96.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/app/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ asset('images/app/manifest.json') }}">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{{ asset('images/app/ms-icon-144x144.png') }}">
+<meta name="theme-color" content="#ffffff">
 <!-- SCRIPTS
   ================================================== -->
 <script src=" {{ asset('/js/modernizr.js')}} "></script><!-- Modernizr -->
@@ -38,14 +53,14 @@
         <div class="row">
           <div class="col-md-4 col-sm-6">
             <ul class="horiz-nav pull-left">
-              <li class="dropdown"><a data-toggle="dropdown"><i class="fa fa-user"></i> Mon compte <b class="caret"></b></a>
+              <li class="dropdown"><a href="{{ url('/login') }}" data-toggle="dropdown"><i class="fa fa-user"></i> Connexion <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="my-properties.php">My properties</a></li>
-                  <li><a href="{{ url('/submitProperty') }}">Add a property</a></li>
+                  <li><a href="{{ url('/myProperties') }}">Mes Propriétés</a></li>
+                  <li><a href="{{ url('/submit') }}">Add a property</a></li>
                   <li><a href="edit-agent-profile.php">My Profile</a></li>
                 </ul>
               </li>
-              <li><a href="{{ url('/login') }}"><i class="fa fa-check-circle"></i> Connexion</a></li>
+              <li><a href="{{ url('/register') }}"><i class="fa fa-check-circle"></i> Inscription</a></li>
               </ul>
           </div>
           <div class="col-md-8 col-sm-6">
@@ -67,16 +82,16 @@
           <div class="col-md-8 col-sm-4 col-xs-4">
               <div class="contact-info-blocks hidden-sm hidden-xs">
                   <div>
-                      <i class="fa fa-phone"></i> Free Line For You
-                    <span>080 378678 90</span>
+                      <i class="fa fa-phone"></i> Téléphone:
+                    <span>00225 08 57 74 64</span>
                 </div>
                   <div>
-                      <i class="fa fa-envelope"></i> Email Us
-                    <span>sales@realspaces.com</span>
+                      <i class="fa fa-envelope"></i> Email
+                    <span>infos@imoforse.com</span>
                 </div>
                   <div>
-                      <i class="fa fa-clock-o"></i> Working Hours
-                    <span>09:00 to 17:00</span>
+                      <i class="fa fa-clock-o"></i> Heures d'ouvertures
+                    <span>09:00 à 17:00</span>
                 </div>
              </div>
               <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a>
@@ -90,79 +105,13 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="{{ url('/')}}">Accueil</a>
-                  <ul class="dropdown">
-                    <li><a href="index.php">Version 1</a></li>
-                    <li><a href="index1.php">Version 2</a></li>
-                  </ul>
-                </li>
-                <li><a href="{{ url('/about')}}">About Us</a></li>
-                <li><a href="{{ url('/login')}}">Register as Agent</a></li>
-                <li><a href="javascript:;">Pages</a>
-                  <ul class="dropdown">
-                    <li><a href="agents.php">Agents</a></li>
-                    <li><a href="agent-detail.php">Agent Single</a></li>
-                    <li><a href="my-properties.php">Agent Properties</a></li>
-                    <li><a href="submit.php">List a property</a></li>
-                    <li><a href="pricing.php">Pricing</a></li>
-                    <li><a href="login.php">Register/Login</a></li>
-                    <li><a href="404.php">404</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Properties</a>
-                  <ul class="dropdown">
-                    <li><a href="javascript:;">Listing</a>
-                      <ul>
-                          <li><a href="simple-listing.php">Simple Listing</a></li>
-                          <li><a href="listing-map.php">Simple Listing with map</a></li>
-                          <li><a href="simple-listing-fw.php">Full Width Listing</a></li>
-                          <li><a href="grid-listing.php">Grid Listing</a></li>
-                          <li><a href="grid-map.php">Grid Listing with map</a></li>
-                          <li><a href="grid-listing-fw.php">Full Width Grid</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:;">Types</a>
-                      <ul>
-                          <li><a href="property-type.php">Villa</a></li>
-                          <li><a href="property-type.php">Single Home</a></li>
-                          <li><a href="property-type.php">Cottage</a></li>
-                          <li><a href="property-type.php">Family House</a></li>
-                          <li><a href="property-type.php">Apartment</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:;">Contract type</a>
-                      <ul>
-                          <li><a href="contract-type.php">Sale</a></li>
-                          <li><a href="contract-type.php">Rent</a></li>
-                          <li><a href="contract-type.php">Sold</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="property-detail.php">Single Property</a></li>
-                    <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Features</a>
-                  <ul class="dropdown">
-                    <li><a href="shortcodes.php">Shortcodes</a></li>
-                    <li><a href="typography.php">Typography</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Gallery</a>
-                  <ul class="dropdown">
-                    <li><a href="gallery-2cols.php">2 Columns</a></li>
-                    <li><a href="gallery-3cols.php">3 Columns</a></li>
-                    <li><a href="gallery-4cols.php">4 Columns</a></li>
-                    <li><a href="gallery-masonry.php">Masonry Grid</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Blog</a>
-                  <ul class="dropdown">
-                    <li><a href="blog-masonry.php">Masonry</a></li>
-                    <li><a href="blog-timeline.php">Timeline</a></li>
-                    <li><a href="blog-thumbnails.php">Classic</a></li>
-                    <li><a href="blog-post.php">Single Post</a></li>
-                  </ul>
-                </li>
+                <li><a href="{{ url('/') }}">Accueil</a></li>
+                <li><a href="{{ url('/about') }}">A Propos</a></li>
+                <li><a href="{{ url('/propertyType') }}">Achat/Location</a></li>
+                <li><a href="{{ url('/propertyType') }}">Location Saisonnière</a> </li>
+                <li><a href="{{ url('/propertyType') }}">Achat de terrain</a> </li>
+                <li><a href="{{ url('/gallery') }}">Galérie</a> </li>
+                <li><a href="{{ url('/blog') }}">Blog</a></li>
                 <li><a href="{{ url('/contact') }}">Contact</a></li>
               </ul>
             </nav>
@@ -175,11 +124,11 @@
   <!-- Site Showcase -->
   <div class="site-showcase">
   <!-- Start Page Header -->
-  <div class="parallax page-header" style="background-image:url(http://placehold.it/1200x260&amp;text=IMAGE+PLACEHOLDER);">
+  <div class="parallax page-header" style="background-image:url('{{ asset('images/banner/1200X260.png') }}')">
   		<div class="container">
         	<div class="row">
             	<div class="col-md-12">
-  					<h1>Submit a Property</h1>
+  					<h1>Publier une annonce</h1>
         		</div>
            </div>
        </div>
@@ -195,57 +144,57 @@
               			<div class="col-md-12">
                         	<form>
                           <div class="block-heading" id="details">
-                     			 <a href="#additionalinfo" class="btn btn-sm btn-default pull-right">Additional Info <i class="fa fa-chevron-down"></i></a>
-                              <h4><span class="heading-icon"><i class="fa fa-home"></i></span>Property Details</h4>
+                     			 <a href="#additionalinfo" class="btn btn-sm btn-default pull-right">Infos supplémentaires <i class="fa fa-chevron-down"></i></a>
+                              <h4><span class="heading-icon"><i class="fa fa-home"></i></span>Détails de l'offre</h4>
                           </div>
                           <div class="padding-as25 margin-30 lgray-bg">
                               <div class="row">
                                       <div class="col-md-4 col-sm-4">
-                                      <input type="text" class="form-control" placeholder="Property name">
+                                      <input type="text" class="form-control" placeholder="Nom de la propriété">
                                   </div>
                                       <div class="col-md-4 col-sm-4">
-                                      <input type="text" class="form-control" placeholder="Address">
+                                      <input type="text" class="form-control" placeholder="Adresse">
                                   </div>
                                       <div class="col-md-4 col-sm-4">
-                                      <input type="text" class="form-control" placeholder="Location">
+                                      <input type="text" class="form-control" placeholder="Localisation">
                                   </div>
                               </div>
                               <div class="row">
                                       <div class="col-md-4 col-sm-4">
                                         <select name="type" class="form-control margin-0 selectpicker">
-                                          	<option>City</option>
-                                          	<option>New York</option>
+                                          	<option>Ville</option>
+                                            <option>Abidjan</option>
+                                          	<option>Grand Bassam</option>
                                       	</select>
                                   </div>
                                       <div class="col-md-8 col-sm-8 submit-description">
-                                      <textarea name="description" class="form-control margin-0" rows="1" cols="10" placeholder="Propery Description"></textarea>
+                                      <textarea name="description" class="form-control margin-0" rows="1" cols="10" placeholder="Description"></textarea>
                                   </div>
                               </div>
                           </div>
                           <div class="block-heading" id="additionalinfo">
                      			 <a href="#amenities" class="btn btn-sm btn-default pull-right">Enter Amenities <i class="fa fa-chevron-down"></i></a>
-                              <h4><span class="heading-icon"><i class="fa fa-plus"></i></span>Additional Info</h4>
+                              <h4><span class="heading-icon"><i class="fa fa-plus"></i></span>Infos supplémentaires</h4>
                           </div>
                           <div class="padding-as25 margin-30 lgray-bg">
                               <div class="row">
                                       <div class="col-md-4 col-sm-4">
-                                      <input type="text" class="form-control" placeholder="Price($)">
+                                      <input type="text" class="form-control" placeholder="Prix(FCFA)">
                                   </div>
                                       <div class="col-md-4 col-sm-4 submit-property-type">
                                           <select name="type" class="form-control margin-0 selectpicker">
-                                              <option>Property Type</option>
+                                              <option>Type de propriété</option>
                                               <option>Villa</option>
-                                              <option>Single Home</option>
-                                              <option>Cottage</option>
-                                              <option>Family House</option>
-                                              <option>Apartment</option>
+                                              <option>Maison</option>
+                                              <option>Location</option>
+                                              <option>Appartement</option>
                                           </select>
                                   	</div>
                                       <div class="col-md-4 col-sm-4 submit-contract-type">
                                           <select name="type" class="form-control margin-0 selectpicker">
-                                              <option>Contract Type</option>
-                                              <option>For Sale</option>
-                                              <option>Font Rent</option>
+                                              <option>Type de contrat</option>
+                                              <option>A vendre</option>
+                                              <option>A louer</option>
                                           </select>
                                   </div>
                               </div>
@@ -262,7 +211,7 @@
                                   	</div>
                                     <div class="col-md-4 col-sm-4">
                                           <select name="type" class="form-control selectpicker">
-                                          	<option>Baths</option>
+                                          	<option>Douches</option>
                                           	<option>1</option>
                                           	<option>2</option>
                                           	<option>3</option>
@@ -272,7 +221,7 @@
                                   	</div>
                                    	<div class="col-md-4 col-sm-4">
                                           <select name="type" class="form-control selectpicker">
-                                          	<option>Parking</option>
+                                          	<option>Cuisines</option>
                                           	<option>1</option>
                                           	<option>2</option>
                                           	<option>3+</option>
@@ -281,7 +230,7 @@
                               </div>
                               <div class="row">
                                  	<div class="col-md-3 col-sm-3">
-                                      	<label>Upload Images</label>
+                                      	<label>Télécharger les Images</label>
                                         <p>Upload images that are best clicked for better appearance of your property</p>
                                   	</div>
                                  	<div class="col-md-3 col-sm-3 submit-image">
@@ -481,7 +430,7 @@
   <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
 <script src="{{ asset('js/jquery-2.0.0.min.js') }}"></script>
-<script src=" {{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script>
+<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script>
 <script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js') }} "></script>
 <script src="{{ asset('/js/helper-plugins.js') }} "></script>

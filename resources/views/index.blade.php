@@ -8,12 +8,9 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<!-- Mobile Specific Metas
-  ================================================== -->
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-<!-- CSS
-  ================================================== -->
+
 <link href="{{ asset('/css/bootstrap.css') }} " rel="stylesheet" type="text/css">
 <link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('/plugins/prettyphoto/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
@@ -22,6 +19,24 @@
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
 <link href=" {{ asset('/colors/color9.css')}} " rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/app/apple-icon-57x57.png') }}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/app/apple-icon-60x60.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/app/apple-icon-72x72.png') }}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/app/apple-icon-76x76.png') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/app/apple-icon-114x114.png') }}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/app/apple-icon-120x120.png') }}">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/app/apple-icon-144x144.png') }}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/app/apple-icon-152x152.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/app/apple-icon-180x180.png') }}">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('images/app/android-icon-192x192.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/app/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/app/favicon-96x96.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/app/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ asset('images/app/manifest.json') }}">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{{ asset('images/app/ms-icon-144x144.png') }}">
+<meta name="theme-color" content="#ffffff">
 <!-- SCRIPTS
   ================================================== -->
 <script src=" {{ asset('/js/modernizr.js')}} "></script><!-- Modernizr -->
@@ -38,14 +53,14 @@
         <div class="row">
           <div class="col-md-4 col-sm-6">
             <ul class="horiz-nav pull-left">
-              <li class="dropdown"><a data-toggle="dropdown"><i class="fa fa-user"></i> Mon compte <b class="caret"></b></a>
+              <li class="dropdown"><a href="{{ url('/login') }}" data-toggle="dropdown"><i class="fa fa-user"></i> Connexion <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="my-properties.php">Mes propriétés</a></li>
-                  <li><a href=" {{ url('/submitProperty')}} ">Ajouter une propriété</a></li>
+                  <li><a href="{{ url('/myProperties')}}">Mes propriétés</a></li>
+                  <li><a href=" {{ url('/submit')}} ">Ajouter une propriété</a></li>
                   <li><a href="{{ url('/edit-agent-profile.php') }}">Mon profile</a></li>
                 </ul>
               </li>
-              <li><a href="{{ url('/login') }}""><i class="fa fa-check-circle"></i> Connexion</a></li>
+              <li><a href="{{ url('/register') }}""><i class="fa fa-check-circle"></i> Inscription</a></li>
               </ul>
           </div>
           <div class="col-md-8 col-sm-6">
@@ -62,7 +77,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-8 col-xs-8">
-            <h1 class="logo"> <a href="{{ url('/') }}"><img src="{{ asset('/images/logo.png') }}" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="{{ url('/') }}"><img src="{{ asset('/images/logo.png') }}" alt="Imoforse Logo"></a> </h1>
           </div>
           <div class="col-md-8 col-sm-4 col-xs-4">
               <div class="contact-info-blocks hidden-sm hidden-xs">
@@ -92,50 +107,9 @@
               <ul class="sf-menu">
                 <li><a href="{{ url('/') }}">Accueil</a></li>
                 <li><a href="{{ url('/about') }}">A Propos</a></li>
-                <li><a href="{{ url('/login') }}">Register as Agent</a></li>
-                <li><a href="javascript:;">Pages</a>
-                  <ul class="dropdown">
-                    <li><a href="agents.php">Agents</a></li>
-                    <li><a href="agent-detail.php">Agent Single</a></li>
-                    <li><a href="{{ url('/myProperties') }}">Agent Properties</a></li>
-                    <li><a href="{{ url('/submitProperty') }}">List a property</a></li>
-                    <li><a href="pricing.php">Pricing</a></li>
-                    <li><a href="{{ url('/login') }}">Register/Login</a></li>
-                    <li><a href="{{ url('/404') }}">404</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Properties</a>
-                  <ul class="dropdown">
-                    <li><a href="javascript:;">Listing</a>
-                      <ul>
-                          <li><a href="simple-listing.php">Simple Listing</a></li>
-                          <li><a href="{{ url('/listingMap') }}">Simple Listing with map</a></li>
-                          <li><a href="simple-listing-fw.php">Full Width Listing</a></li>
-                          <li><a href="grid-listing.php">Grid Listing</a></li>
-                          <li><a href="grid-map.php">Grid Listing with map</a></li>
-                          <li><a href="grid-listing-fw.php">Full Width Grid</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:;">Types</a>
-                      <ul>
-                          <li><a href="property-type.php">Villa</a></li>
-                          <li><a href="property-type.php">Single Home</a></li>
-                          <li><a href="property-type.php">Cottage</a></li>
-                          <li><a href="property-type.php">Family House</a></li>
-                          <li><a href="property-type.php">Apartment</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:;">Contract type</a>
-                      <ul>
-                          <li><a href="contract-type.php">Sale</a></li>
-                          <li><a href="contract-type.php">Rent</a></li>
-                          <li><a href="contract-type.php">Sold</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="property-detail.php">Single Property</a></li>
-                    <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
-                  </ul>
-                </li>
+                <li><a href="{{ url('/propertyType') }}">Achat/Location</a> </li>
+                <li><a href="{{ url('/propertyType') }}">Location saisonnière</a></li>
+                <li><a href="{{ url('/propertyType') }}">Achat de Terrain</a></li>
                 <li><a href="{{ url('/galerie') }}">Galérie</a></li>
                 <li><a href="{{ url('/blog') }}">Blog</a> </li>
                 <li><a href="{{ url('/contact') }}">Contact</a></li>
@@ -153,24 +127,24 @@
     <!-- Start Hero Slider -->
     <div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade" data-pause="yes">
       <ul class="slides">
-        <li class=" parallax" style="background-image:url({{ asset('/images/slider/01.jpg') }});">
+        <li class=" parallax" style="background-image:url('{{ asset('images/slider/01.jpg') }}')">
           <div class="flex-caption">
               <strong class="title">1671 Grand Avenue, <em>NYC</em></strong>
-             <div class="price"><strong>$</strong><span>100000</span></div>
-             <a href="property-detail.php" class="btn btn-primary btn-block">Details</a>
+             <div class="price"><span>100 000</span><strong>CFA</strong></div>
+             <a href="{{ url('/propertyDetail') }}" class="btn btn-primary btn-block">Details</a>
               <div class="hero-agent">
-                  <img src="http://placehold.it/365x365&amp;text=IMAGE+PLACEHOLDER" alt="" class="hero-agent-pic">
-                  <a href="agent-detail.php" class="hero-agent-contact" data-placement="left"  data-toggle="tooltip" title="" data-original-title="Contact Agent"><i class="fa fa-envelope"></i></a>
+                  <img src="{{ asset('images/365x365.png') }}" alt="" class="hero-agent-pic">
+                  <a href="{{ url('/agentDetail') }}" class="hero-agent-contact" data-placement="left"  data-toggle="tooltip" title="" data-original-title="Contact Agent"><i class="fa fa-envelope"></i></a>
              </div>
           </div>
         </li>
-        <li class="parallax" style="background-image:url('/images/slider/02.jpg');">
+        <li class="parallax" style="background-image:url('{{ asset('images/slider/02.jpg') }} ')">
           <div class="flex-caption">
               <strong class="title">1671 Grand Avenue, <em>NYC</em></strong>
-             <div class="price"><strong>$</strong><span>100000</span></div> <a href="property-detail.php" class="btn btn-primary btn-block">Details</a>
+             <div class="price"><span>100 000</span><strong>CFA</strong></div> <a href="{{ url('/propertyDetail') }}" class="btn btn-primary btn-block">Details</a>
               <div class="hero-agent">
-                  <img src="http://placehold.it/365x365&amp;text=IMAGE+PLACEHOLDER" alt="" class="hero-agent-pic">
-                  <a href="agent-detail.php" class="hero-agent-contact" data-placement="left"  data-toggle="tooltip" title="" data-original-title="Contact Agent"><i class="fa fa-envelope"></i></a>
+                  <img src="{{ asset('images/365x365.png') }}" alt="" class="hero-agent-pic">
+                  <a href="{{ url('/agentDetail') }}" class="hero-agent-contact" data-placement="left"  data-toggle="tooltip" title="" data-original-title="Contact Agent"><i class="fa fa-envelope"></i></a>
               </div>
           </div>
         </li>
@@ -186,33 +160,33 @@
               <div class="row">
                 <div class="col-md-2">
                     <select name="propery type" class="form-control input-lg selectpicker">
-                        <option selected>Type</option>
+                        <option selected>Type de propriété</option>
                       	<option>Villa</option>
-                      	<option>Family House</option>
-                      	<option>Studio</option>
-                      	<option>Cottage</option>
+                      	<option>Maison</option>
+                      	<option>Location</option>
                       	<option>Appartement</option>
                     </select>
                 </div>
                 <div class="col-md-3">
                     <select name="propery contract type" class="form-control input-lg selectpicker">
-                        <option selected>Contract</option>
+                        <option selected>Type de Contrat</option>
                       <option>Louer</option>
                       <option>Acheter</option>
                     </select>
                 </div>
                 <div class="col-md-3">
                     <select name="propery location" class="form-control input-lg selectpicker">
-                        <option selected>Location</option>
-                      <option>New York</option>
+                        <option selected>Localisation</option>
+                      <option>Abidjan</option>
+                      <option>Grand Bassam</option>
                     </select>
                 </div>
-                <div class="col-md-2"> <button type="submit" class="btn btn-primary btn-block btn-lg"><i class="fa fa-search"></i> Chercher</button> </div>
+                <div class="col-md-2"> <button type="submit" class="btn btn-primary btn-block btn-lg"><i class="fa fa-search"></i> Rechercher</button> </div>
                 <div class="col-md-2"> <a href="#" id="ads-trigger" class="btn btn-default btn-block"><i class="fa fa-plus"></i> <span>Avancée</span></a> </div>
               </div>
               <div class="row hidden-xs hidden-sm">
                 <div class="col-md-2">
-                  <label>Min Beds</label>
+                  <label>Min Chambres</label>
                     <select name="beds" class="form-control input-lg selectpicker">
                       <option>Any</option>
                       <option>1</option>
@@ -228,7 +202,7 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                  <label>Min Baths</label>
+                  <label>Min Douches</label>
                     <select name="beds" class="form-control input-lg selectpicker">
                       <option>Any</option>
                       <option>1</option>
@@ -244,44 +218,44 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                  <label>Min Price</label>
+                  <label>Min Prix</label>
                     <select name="beds" class="form-control input-lg selectpicker">
-                      <option>Any</option>
-                      <option>$1000</option>
-                      <option>$5000</option>
-                      <option>$10000</option>
-                      <option>$50000</option>
-                      <option>$100000</option>
-                      <option>$500000</option>
-                      <option>$1000000</option>
-                      <option>$3000000</option>
-                      <option>$5000000</option>
-                      <option>$10000000</option>
+                      <option>Peu importe</option>
+                      <option>1000CFA</option>
+                      <option>5000CFA</option>
+                      <option>10000CFA</option>
+                      <option>50000CFA</option>
+                      <option>100000CFA</option>
+                      <option>500000CFA</option>
+                      <option>1000000CFA</option>
+                      <option>3000000CFA</option>
+                      <option>5000000CFA</option>
+                      <option>10000000CFA</option>
                     </select>
                 </div>
                 <div class="col-md-2">
-                  <label>Max Price</label>
+                  <label>Max Prix</label>
                     <select name="beds" class="form-control input-lg selectpicker">
-                      <option>Any</option>
-                      <option>$1000</option>
-                      <option>$5000</option>
-                      <option>$10000</option>
-                      <option>$50000</option>
-                      <option>$100000</option>
-                      <option>$500000</option>
-                      <option>$1000000</option>
-                      <option>$3000000</option>
-                      <option>$5000000</option>
-                      <option>$10000000</option>
+                      <option>Peu importe</option>
+                      <option>1000CFA</option>
+                      <option>5000CFA</option>
+                      <option>10000CFA</option>
+                      <option>50000CFA</option>
+                      <option>100000CFA</option>
+                      <option>500000CFA</option>
+                      <option>1000000CFA</option>
+                      <option>3000000CFA</option>
+                      <option>5000000CFA</option>
+                      <option>10000000CFA</option>
                     </select>
                 </div>
                 <div class="col-md-2">
-                  <label>Min Area (Sq Ft)</label>
-                  <input type="text" class="form-control input-lg" placeholder="Any">
+                  <label>Min Superficie (Sq Ft)</label>
+                  <input type="text" class="form-control input-lg" placeholder="tout">
                 </div>
                 <div class="col-md-2">
-                  <label>Max Area (Sq Ft)</label>
-                  <input type="text" class="form-control input-lg" placeholder="Any">
+                  <label>Max Superficie (Sq Ft)</label>
+                  <input type="text" class="form-control input-lg" placeholder="tout">
                 </div>
               </div>
             </div>
@@ -296,15 +270,15 @@
       <div class="featured-blocks">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 col-sm-4 featured-block"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt="Search Anywhere" class="img-thumbnail">
+            <div class="col-md-4 col-sm-4 featured-block"> <img src="{{ asset('images/600x600.png') }}" alt="Search Anywhere" class="img-thumbnail">
               <h3>Rechercher un bien</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
             </div>
-            <div class="col-md-4 col-sm-4 featured-block"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt="Friendly Agents" class="img-thumbnail">
+            <div class="col-md-4 col-sm-4 featured-block"> <img src="{{ asset('images/600x600.png') }}" alt="Friendly Agents" class="img-thumbnail">
               <h3>Agents amicaux</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
             </div>
-            <div class="col-md-4 col-sm-4 featured-block"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt="Search Anywhere" class="img-thumbnail">
+            <div class="col-md-4 col-sm-4 featured-block"> <img src="{{ asset('images/600x600.png') }}" alt="Search Anywhere" class="img-thumbnail">
               <h3>Acheter ou louer</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
             </div>
@@ -324,121 +298,121 @@
               <ul>
                 <li class="col-md-4 col-sm-6 type-rent">
                       <div class="property-block">
-                          <a href="property-detail.php" class="property-featured-image">
-                              <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                          <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                              <img src="{{ asset('images/600x400.png') }}" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                               <span class="badges">Louer</span>
                           </a>
                       <div class="property-info">
-                              <h4><a href="property-detail.php">116 Waverly Place</a></h4>
+                              <h4><a href="{{ url('/propertyDetail') }}">116 Waverly Place</a></h4>
                               <span class="location">NYC</span>
-                              <div class="price"><strong>$</strong><span>2800 Monthly</span></div>
+                              <div class="price"><span>2800 Monthly</span><strong>CFA</strong></div>
                       </div>
                       <div class="property-amenities clearfix">
                               <span class="area"><strong>5000</strong>m2</span>
                               <span class="baths"><strong>3</strong>Douches</span>
                               <span class="beds"><strong>3</strong>Chambres</span>
-                              <span class="parking"><strong>1</strong>Parking</span>
+                              <span class="parking"><strong>3</strong>Cuisines</span>
                           </div>
                       </div>
                 </li>
                 <li class="col-md-4 col-sm-6 type-buy">
                       <div class="property-block">
-                          <a href="property-detail.php" class="property-featured-image">
-                          <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                          <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                          <img src="{{ asset('images/600x400.png') }}" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                               <span class="badges">Acheter</span>
                           </a>
-                      <div class="property-info">
-                              <h4><a href="property-detail.php">232 East 63rd Street</a></h4>
+                          <div class="property-info">
+                              <h4><a href="{{ url('/propertyDetail') }}">232 East 63rd Street</a></h4>
                               <span class="location">NYC</span>
-                              <div class="price"><strong>$</strong><span>250000</span></div>
-                      </div>
-                      <div class="property-amenities clearfix">
-                          <span class="area"><strong>5000</strong>Area</span>
-                              <span class="baths"><strong>3</strong>Baths</span>
-                              <span class="beds"><strong>3</strong>Beds</span>
-                              <span class="parking"><strong>1</strong>Parking</span>
+                              <div class="price"><span>250000</span><strong>CFA</strong></div>
+                          </div>
+                          <div class="property-amenities clearfix">
+                              <span class="area"><strong>5000</strong>m2</span>
+                              <span class="baths"><strong>3</strong>Douches</span>
+                              <span class="beds"><strong>3</strong>Chambres</span>
+                              <span class="parking"><strong>3</strong>Cuisines</span>
                           </div>
                       </div>
                 </li>
                 <li class="col-md-4 col-sm-6 type-rent">
                       <div class="property-block">
-                          <a href="property-detail.php" class="property-featured-image">
-                              <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                          <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                              <img src="{{ asset('images/600x400.png') }}" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                               <span class="badges">Acheter</span>
-                      </a>
-                      <div class="property-info">
-                              <h4><a href="property-detail.php">55 Warren Street</a></h4>
-                              <span class="location">NYC</span>
-                              <div class="price"><strong>$</strong><span>300000</span></div>
-                      </div>
-                      <div class="property-amenities clearfix">
-                          <span class="area"><strong>5000</strong>Area</span>
-                          <span class="baths"><strong>3</strong>Baths</span>
-                              <span class="beds"><strong>3</strong>Beds</span>
-                              <span class="parking"><strong>1</strong>Parking</span>
+                          </a>
+                          <div class="property-info">
+                                  <h4><a href="{{ url('/propertyDetail') }}">55 Warren Street</a></h4>
+                                  <span class="location">NYC</span>
+                                  <div class="price"><span>300000</span><strong>CFA</strong></div>
+                          </div>
+                          <div class="property-amenities clearfix">
+                              <span class="area"><strong>5000</strong>m2</span>
+                              <span class="baths"><strong>3</strong>Douches</span>
+                              <span class="beds"><strong>3</strong>Chambres</span>
+                              <span class="parking"><strong>3</strong>Cuisines</span>
                           </div>
                       </div>
                 </li>
                 <li class="col-md-4 col-sm-6 type-rent">
                       <div class="property-block">
-                      <a href="property-detail.php" class="property-featured-image">
-                          <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                      <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                          <img src="{{ asset('images/600x400.png') }}" alt="">
                           <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                           <span class="badges">Louer</span>
                           </a>
                       <div class="property-info">
-                              <h4><a href="property-detail.php">459 West Broadway</a></h4>
+                              <h4><a href="{{ url('/propertyDetail') }}">459 West Broadway</a></h4>
                               <span class="location">NYC</span>
-                              <div class="price"><strong>$</strong><span>3100 Monthly</span></div>
+                              <div class="price"><span>3100 Monthly</span><strong>CFA</strong></div>
                       </div>
                       <div class="property-amenities clearfix">
-                          <span class="area"><strong>5000</strong>Area</span>
-                              <span class="baths"><strong>3</strong>Baths</span>
-                              <span class="beds"><strong>3</strong>Beds</span>
-                              <span class="parking"><strong>1</strong>Parking</span>
+                          <span class="area"><strong>5000</strong>m2</span>
+                              <span class="baths"><strong>3</strong>Douches</span>
+                              <span class="beds"><strong>3</strong>Chambres</span>
+                              <span class="parking"><strong>3</strong>Cuisines</span>
                           </div>
                       </div>
                 </li>
                 <li class="col-md-4 col-sm-6 type-buy">
                       <div class="property-block">
-                      <a href="property-detail.php" class="property-featured-image">
-                              <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                      <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                              <img src="{{ asset('images/600x400.png') }}" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                               <span class="badges">Acheter</span>
                           </a>
                       <div class="property-info">
-                              <h4><a href="property-detail.php">70 Greene Street</a></h4>
+                              <h4><a href="{{ url('/propertyDetail') }}">70 Greene Street</a></h4>
                               <span class="location">NYC</span>
-                              <div class="price"><strong>$</strong><span>500000</span></div>
+                              <div class="price"><span>500000</span><strong>CFA</strong></div>
                       </div>
                       <div class="property-amenities clearfix">
-                          <span class="area"><strong>5000</strong>Area</span>
-                          <span class="baths"><strong>3</strong>Baths</span>
-                          <span class="beds"><strong>3</strong>Beds</span>
-                          <span class="parking"><strong>1</strong>Parking</span>
+                          <span class="area"><strong>5000</strong>m2</span>
+                          <span class="baths"><strong>3</strong>Douches</span>
+                          <span class="beds"><strong>3</strong>Chambres</span>
+                          <span class="parking"><strong>3</strong>Cuisines</span>
                           </div>
                       </div>
                 </li>
                 <li class="col-md-4 col-sm-6 type-rent">
                       <div class="property-block">
-                      <a href="property-detail.php" class="property-featured-image">
-                          <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                      <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                          <img src="{{ asset('images/600x400.png') }}" alt="">
                               <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                               <span class="badges">Louer</span>
                           </a>
                       <div class="property-info">
-                              <h4><a href="property-detail.php">115 Allen Street</a></h4>
+                              <h4><a href="{{ url('/propertyDetail') }}">115 Allen Street</a></h4>
                               <span class="location">NYC</span>
-                              <div class="price"><strong>$</strong><span>5000 Monthly</span></div>
+                              <div class="price"><span>5000 Monthly</span><strong>CFA</strong></div>
                       </div>
                       <div class="property-amenities clearfix">
-                          <span class="area"><strong>5000</strong>Area</span>
-                          <span class="baths"><strong>3</strong>Baths</span>
-                          <span class="beds"><strong>3</strong>Beds</span>
-                          <span class="parking"><strong>1</strong>Parking</span>
+                          <span class="area"><strong>5000</strong>m2</span>
+                          <span class="baths"><strong>3</strong>Douches</span>
+                          <span class="beds"><strong>3</strong>Chambres</span>
+                          <span class="parking"><strong>3</strong>Cuisines</span>
                           </div>
                       </div>
                 </li>
@@ -458,75 +432,75 @@
           <div class="row">
               <ul class="owl-carousel owl-alt-controls" data-columns="4" data-autoplay="no" data-pagination="no" data-arrows="yes" data-single-item="no">
                   <li class="item property-block">
-                      <a href="property-detail.php" class="property-featured-image">
-                      <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                      <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                      <img src="{{ asset('images/600x400.png') }}" alt="">
                       <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                      <span class="badges">Rent</span>
+                      <span class="badges">Louer</span>
                       </a>
                       <div class="property-info">
-                          <h4><a href="property-detail.php">116 Waverly Place</a></h4>
+                          <h4><a href="{{ url('/propertyDetail') }}">116 Waverly Place</a></h4>
                           <span class="location">NYC</span>
-                          <div class="price"><strong>$</strong><span>2800 Monthly</span></div>
+                          <div class="price"><span>2800 Monthly</span><strong>CFA</strong></div>
                       </div>
                   </li>
                   <li class="item property-block">
-                  <a href="property-detail.php" class="property-featured-image">
-                      <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                  <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                      <img src="{{ asset('images/600x400.png') }}" alt="">
                       <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                          <span class="badges">Buy</span>
+                          <span class="badges">Acheter</span>
                       </a>
                       <div class="property-info">
-                          <h4><a href="property-detail.php">232 East 63rd Street</a></h4>
+                          <h4><a href="{{ url('/propertyDetail') }}">232 East 63rd Street</a></h4>
                           <span class="location">NYC</span>
-                          <div class="price"><strong>$</strong><span>250000</span></div>
+                          <div class="price"><span>250000</span><strong>CFA</strong></div>
                       </div>
                   </li>
                   <li class="item property-block">
-                      <a href="property-detail.php" class="property-featured-image">
-                          <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                      <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                          <img src="{{ asset('images/600x400.png') }}" alt="">
                           <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                          <span class="badges">Buy</span>
+                          <span class="badges">Acheter</span>
                       </a>
                       <div class="property-info">
-                          <h4><a href="property-detail.php">55 Warren Street</a></h4>
+                          <h4><a href="{{ url('/propertyDetail') }}">55 Warren Street</a></h4>
                           <span class="location">NYC</span>
-                          <div class="price"><strong>$</strong><span>300000</span></div>
+                          <div class="price"><span>300000</span><strong>CFA</strong></div>
                       </div>
                   </li>
                   <li class="item property-block">
-                      <a href="property-detail.php" class="property-featured-image">
-                          <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                      <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                          <img src="{{ asset('images/600x400.png') }}" alt="">
                           <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                          <span class="badges">Rent</span>
+                          <span class="badges">Louer</span>
                       </a>
                       <div class="property-info">
-                          <h4><a href="property-detail.php">459 West Broadway</a></h4>
+                          <h4><a href="{{ url('/propertyDetail') }}">459 West Broadway</a></h4>
                           <span class="location">NYC</span>
-                          <div class="price"><strong>$</strong><span>3100 Monthly</span></div>
+                          <div class="price"><span>3100 Monthly</span><strong>CFA</strong></div>
                       </div>
                   </li>
                   <li class="item property-block">
-                  <a href="property-detail.php" class="property-featured-image">
-                          <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                  <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                          <img src="{{ asset('images/600x400.png') }}" alt="">
                           <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                          <span class="badges">Buy</span>
+                          <span class="badges">Acheter</span>
                       </a>
                       <div class="property-info">
-                          <h4><a href="property-detail.php">70 Greene Street</a></h4>
+                          <h4><a href="{{ url('/propertyDetail') }}">70 Greene Street</a></h4>
                           <span class="location">NYC</span>
-                          <div class="price"><strong>$</strong><span>500000</span></div>
+                          <div class="price"><span>500000</span><strong>CFA</strong></div>
                       </div>
                   </li>
                   <li class="item property-block">
-                      <a href="property-detail.php" class="property-featured-image">
-                          <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
+                      <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
+                          <img src="{{ asset('images/600x400.png') }}" alt="">
                           <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
-                          <span class="badges">Rent</span>
+                          <span class="badges">Louer</span>
                       </a>
                       <div class="property-info">
-                          <h4><a href="property-detail.php">115 Allen Street</a></h4>
+                          <h4><a href="{{ url('/propertyDetail') }}">115 Allen Street</a></h4>
                           <span class="location">NYC</span>
-                          <div class="price"><strong>$</strong><span>5000 Monthly</span></div>
+                          <div class="price"><span>5000 Monthly</span><strong>CFA</strong></div>
                       </div>
                   </li>
               </ul>
@@ -556,7 +530,7 @@
                       <li>
                               <div class="icon"><i class="fa fa-search"></i></div>
                            <div class="text">
-                                  <h4>Advance Search Options</h4>
+                                  <h4>Recherche avancée</h4>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                            </div>
                        </li>
@@ -571,15 +545,15 @@
                 </div>
                   <div class="col-md-4 col-sm-4 popular-agent column">
                       <h3>Nos Agents</h3>
-                    <a href="agent-detail.php"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a>
+                    <a href="{{ url('/agentDetail')}}"><img src="{{ asset('/images/600x400.png') }}" alt="" class="img-thumbnail"></a>
                     <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-6">
                           <h4><a href="agent-detail.php">Brooklyn Coyle</a></h4>
-                              <a href="agent-detail.php" class="btn btn-sm btn-primary">more details</a>
+                              <a href="agent-detail.php" class="btn btn-sm btn-primary">Plus d'infos</a>
                        </div>
                        <div class="col-md-6 col-sm-6 col-xs-6">
                               <ul class="contact-info">
-                                  <li><i class="fa fa-phone"></i> +87 6543 210</li>
+                                  <li><i class="fa fa-phone"></i> +225 6543 210</li>
                                <li><i class="fa fa-envelope"></i> brook@gmail.com</li>
                            </ul>
                        </div>
@@ -590,7 +564,7 @@
                     <ul class="testimonials">
                       <li>
                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                          <img src="http://placehold.it/80x80&amp;text=IMAGE+PLACEHOLDER" alt="Happy Client" class="testimonial-sender">
+                          <img src="{{ asset('/images/80x80.png') }}" alt="Happy Client" class="testimonial-sender">
                               <cite>Mellisa - <strong>My company</strong>
                               <br><a href="#">www.companyurl.com</a>
                            </cite>
@@ -602,21 +576,21 @@
       </div>
      	<div class="container">
          <div class="block-heading">
-            <h4><span class="heading-icon"><i class="fa fa-users"></i></span>Our Partners</h4>
-            <a href="about.php" class="btn btn-primary btn-sm pull-right">All partners <i class="fa fa-long-arrow-right"></i></a>
+            <h4><span class="heading-icon"><i class="fa fa-users"></i></span>Nos Partenaires</h4>
+            <a href="about.php" class="btn btn-primary btn-sm pull-right">Voir tout <i class="fa fa-long-arrow-right"></i></a>
          </div>
          <div class="row">
             <ul class="owl-carousel" id="clients-slider" data-columns="6" data-autoplay="yes" data-pagination="no" data-arrows="no" data-single-item="no" data-items-desktop="6" data-items-desktop-small="4" data-items-mobile="2" data-items-tablet="4">
-              <li class="item"> <a href="#"><img src="images/partner-1.png" alt=""></a> </li>
-              <li class="item"> <a href="#"><img src="images/partner-2.png" alt=""></a> </li>
-              <li class="item"> <a href="#"><img src="images/partner-3.png" alt=""></a> </li>
-              <li class="item"> <a href="#"><img src="images/partner-4.png" alt=""></a> </li>
-              <li class="item"> <a href="#"><img src="images/partner-5.png" alt=""></a> </li>
-              <li class="item"> <a href="#"><img src="images/partner-1.png" alt=""></a> </li>
-              <li class="item"> <a href="#"><img src="images/partner-2.png" alt=""></a> </li>
-              <li class="item"> <a href="#"><img src="images/partner-3.png" alt=""></a> </li>
-              <li class="item"> <a href="#"><img src="images/partner-4.png" alt=""></a> </li>
-              <li class="item"> <a href="#"><img src="images/partner-5.png" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-1.png') }}" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-2.png') }}" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-3.png') }}" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-4.png') }}" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-5.png') }}" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-1.png') }}" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-2.png') }}" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-3.png') }}" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-4.png') }}" alt=""></a> </li>
+              <li class="item"> <a href="#"><img src="{{ asset('images/partner-5.png') }}" alt=""></a> </li>
             </ul>
          </div>
       </div>
@@ -627,7 +601,28 @@
       <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-6 footer-widget widget">
-                <h3 class="widgettitle">Latest News</h3>
+                <h3 class="widgettitle">Imoforse</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellat sit enim voluptas ad id ut nemo similique nobis minus autem impedit.</p>
+                  <ul>
+                    <li><i class="fa fa-phone"></i> (+225) 22 00 00 00</li>
+                    <li><i class="fa fa-envelope"></i> infos@imoforse.net</li>
+                    <li><i class="fa fa-map-marker"></i> Cocody Riviera Faya </li>
+                    <li></li>
+                  </ul>
+                  </ul>
+              </div>
+            <div class="col-md-3 col-sm-6 footer-widget widget">
+                <h3 class="widgettitle">Liens utiles</h3>
+               <ul>
+                <li><a href="{{ url('/about')}}">A Propos</a></li>
+                <li><a href="{{ url('/submit')}}">Publier une annonce</a></li>
+                <li><a href="{{ url('/login')}}">Become an agent</a></li>
+                <li><a href="{{ url('/contact')}}">Contact</a></li>
+               </ul>
+           </div>
+            <div class="col-md-3 col-sm-6 footer-widget widget">
+              <h3 class="widgettitle">Articles récents</h3>
+                  <!--<ul class="twitter-widget"></ul>-->
                   <ul>
                       <li>
                           <a href="blog-post.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
@@ -642,27 +637,13 @@
                           <span class="meta-data">26 February, 2014</span>
                       </li>
                   </ul>
-              </div>
-            <div class="col-md-3 col-sm-6 footer-widget widget">
-                <h3 class="widgettitle">Useful Links</h3>
-               <ul>
-                <li><a href="submit.php">Add your listing</a></li>
-                <li><a href="login.php">Become an agent</a></li>
-                <li><a href="pricing.php">Pricing</a></li>
-                <li><a href="about.php">About us</a></li>
-                <li><a href="shortcodes.php">Theme features</a></li>
-               </ul>
            </div>
             <div class="col-md-3 col-sm-6 footer-widget widget">
-              <h3 class="widgettitle">Twitter Updates</h3>
-                  <ul class="twitter-widget"></ul>
-           </div>
-            <div class="col-md-3 col-sm-6 footer-widget widget">
-                <h3 class="widgettitle">Our Newsletter</h3>
+                <h3 class="widgettitle">Newsletter</h3>
                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
                	<form method="post" id="newsletterform" name="newsletterform" class="newsletter-form" action="mail/newsletter.php">
-                  	<input type="email" name="nl-email" id="nl-email" placeholder="Enter your email" class="form-control">
-                  	<input type="submit" name="nl-submit" id="nl-submit" class="btn btn-primary btn-block btn-lg" value="Subscribe">
+                  	<input type="email" name="nl-email" id="nl-email" placeholder="Entrer votre email" class="form-control">
+                  	<input type="submit" name="nl-submit" id="nl-submit" class="btn btn-primary btn-block btn-lg" value="S'Abonner'">
                	</form>
               	<div class="clearfix"></div>
               	<div id="nl-message"></div>

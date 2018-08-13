@@ -4,27 +4,42 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Imoforse</title>
+<title>Détails propriétés - Imoforse</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<!-- Mobile Specific Metas
-  ================================================== -->
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-<!-- CSS
-  ================================================== -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-<link href="plugins/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
-<link href="plugins/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
+
+<link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/prettyphoto/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/owl-carousel/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/plugins/owl-carousel/css/owl.theme.css') }}" rel="stylesheet" type="text/css">
 <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
 <!-- Color Style -->
-<link href="colors/color9.css" rel="stylesheet" type="text/css">
+<link href="{{ asset('/colors/color9.css') }}" rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/app/apple-icon-57x57.png') }}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/app/apple-icon-60x60.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/app/apple-icon-72x72.png') }}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/app/apple-icon-76x76.png') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/app/apple-icon-114x114.png') }}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/app/apple-icon-120x120.png') }}">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/app/apple-icon-144x144.png') }}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/app/apple-icon-152x152.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/app/apple-icon-180x180.png') }}">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('images/app/android-icon-192x192.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/app/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/app/favicon-96x96.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/app/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ asset('images/app/manifest.json') }}">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{{ asset('images/app/ms-icon-144x144.png') }}">
+<meta name="theme-color" content="#ffffff">
 <!-- SCRIPTS
   ================================================== -->
-<script src="js/modernizr.js"></script><!-- Modernizr -->
+<script src="{{ asset('/js/modernizr.js') }}"></script><!-- Modernizr -->
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -40,12 +55,12 @@
             <ul class="horiz-nav pull-left">
               <li class="dropdown"><a data-toggle="dropdown"><i class="fa fa-user"></i> Login <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="my-properties.php">My properties</a></li>
-                  <li><a href="submit.php">Add a property</a></li>
+                  <li><a href="{{ url('/myProperties') }}">My properties</a></li>
+                  <li><a href="{{ url('/submit')}}">Ajouter une propriété</a></li>
                   <li><a href="edit-agent-profile.php">My Profile</a></li>
                 </ul>
               </li>
-              <li><a href="login.php"><i class="fa fa-check-circle"></i> Register</a></li>
+              <li><a href="{{ url('/login')}}"><i class="fa fa-check-circle"></i> Connexion</a></li>
               </ul>
           </div>
           <div class="col-md-8 col-sm-6">
@@ -62,21 +77,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-8 col-xs-8">
-            <h1 class="logo"> <a href="index.php"><img src="images/logo.png" alt="Logo"></a> </h1>
+            <h1 class="logo"> <a href="{{ url('/')}}"><img src="{{ asset('/images/logo.png') }}" alt="Logo"></a> </h1>
           </div>
-          <div class="col-md-8 col-sm-4 col-xs-4">
+           <div class="col-md-8 col-sm-4 col-xs-4">
               <div class="contact-info-blocks hidden-sm hidden-xs">
                   <div>
-                      <i class="fa fa-phone"></i> Free Line For You
-                    <span>080 378678 90</span>
+                      <i class="fa fa-phone"></i> Téléphone:
+                    <span>00225 08 57 74 64</span>
                 </div>
                   <div>
-                      <i class="fa fa-envelope"></i> Email Us
-                    <span>sales@realspaces.com</span>
+                      <i class="fa fa-envelope"></i> Email
+                    <span>infos@imoforse.com</span>
                 </div>
                   <div>
-                      <i class="fa fa-clock-o"></i> Working Hours
-                    <span>09:00 to 17:00</span>
+                      <i class="fa fa-clock-o"></i> Heures d'ouvertures
+                    <span>09:00 à 17:00</span>
                 </div>
              </div>
               <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a>
@@ -90,80 +105,14 @@
           <div class="col-md-12">
             <nav class="navigation">
               <ul class="sf-menu">
-                <li><a href="index.php">Home</a>
-                  <ul class="dropdown">
-                    <li><a href="index.php">Version 1</a></li>
-                    <li><a href="index1.php">Version 2</a></li>
-                  </ul>
-                </li>
-                <li><a href="about.php">About Us</a></li>
-                <li><a href="login.php">Register as Agent</a></li>
-                <li><a href="javascript:;">Pages</a>
-                  <ul class="dropdown">
-                    <li><a href="agents.php">Agents</a></li>
-                    <li><a href="agent-detail.php">Agent Single</a></li>
-                    <li><a href="my-properties.php">Agent Properties</a></li>
-                    <li><a href="submit.php">List a property</a></li>
-                    <li><a href="pricing.php">Pricing</a></li>
-                    <li><a href="login.php">Register/Login</a></li>
-                    <li><a href="404.php">404</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Properties</a>
-                  <ul class="dropdown">
-                    <li><a href="javascript:;">Listing</a>
-                      <ul>
-                          <li><a href="simple-listing.php">Simple Listing</a></li>
-                          <li><a href="listing-map.php">Simple Listing with map</a></li>
-                          <li><a href="simple-listing-fw.php">Full Width Listing</a></li>
-                          <li><a href="grid-listing.php">Grid Listing</a></li>
-                          <li><a href="grid-map.php">Grid Listing with map</a></li>
-                          <li><a href="grid-listing-fw.php">Full Width Grid</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:;">Types</a>
-                      <ul>
-                          <li><a href="property-type.php">Villa</a></li>
-                          <li><a href="property-type.php">Single Home</a></li>
-                          <li><a href="property-type.php">Cottage</a></li>
-                          <li><a href="property-type.php">Family House</a></li>
-                          <li><a href="property-type.php">Apartment</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:;">Contract type</a>
-                      <ul>
-                          <li><a href="contract-type.php">Sale</a></li>
-                          <li><a href="contract-type.php">Rent</a></li>
-                          <li><a href="contract-type.php">Sold</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="property-detail.php">Single Property</a></li>
-                    <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Features</a>
-                  <ul class="dropdown">
-                    <li><a href="shortcodes.php">Shortcodes</a></li>
-                    <li><a href="typography.php">Typography</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Gallery</a>
-                  <ul class="dropdown">
-                    <li><a href="gallery-2cols.php">2 Columns</a></li>
-                    <li><a href="gallery-3cols.php">3 Columns</a></li>
-                    <li><a href="gallery-4cols.php">4 Columns</a></li>
-                    <li><a href="gallery-masonry.php">Masonry Grid</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;">Blog</a>
-                  <ul class="dropdown">
-                    <li><a href="blog-masonry.php">Masonry</a></li>
-                    <li><a href="blog-timeline.php">Timeline</a></li>
-                    <li><a href="blog-thumbnails.php">Classic</a></li>
-                    <li><a href="blog-post.php">Single Post</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="{{ url('/') }}">Accueil</a></li>
+                <li><a href="{{ url('/about') }}">A Propos</a></li>
+                <li><a href="{{ url('/propertyType') }}">Achat/Location</a></li>
+                <li><a href="{{ url('/propertyType') }}">Location Saisonnière</a> </li>
+                <li><a href="{{ url('/propertyType') }}">Achat de terrain</a> </li>
+                <li><a href="{{ url('/galerie') }}">Galérie</a> </li>
+                <li><a href="{{ url('/blog') }}">Blog</a></li>
+                <li><a href="{{ url('/contact') }}">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -185,31 +134,31 @@
         <div class="row">
           <div class="col-md-9">
             <div class="single-property">
-              <h2 class="page-title">116 Waverly Place, <span class="location">New York</span></h2>
-              <div class="price"><strong>$</strong><span>2800 Monthly</span></div>
-              <div class="property-amenities clearfix"> <span class="area"><strong>For</strong>Rent</span> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="beds"><strong>3</strong>Beds</span> <span class="parking"><strong>1</strong>Parking</span> </div>
+              <h2 class="page-title">116 Waverly Place, <span class="location">Cocody Riviera</span></h2>
+              <div class="price"><span>80000/Mois</span><strong>CFA</strong></div>
+              <div class="property-amenities clearfix"> <span class="area"><strong>A</strong>Louer</span> <span class="area"><strong>5000</strong>m2</span> <span class="baths"><strong>3</strong>Douches</span> <span class="beds"><strong>3</strong>Chambres</span><span class="parking"><strong>3</strong>Cuisines</span></div>
               <div class="property-slider">
                 <div id="property-images" class="flexslider">
                   <ul class="slides">
-                    <li class="item"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </li>
-                    <li class="item"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </li>
-                    <li class="item"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </li>
-                    <li class="item"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
                   </ul>
                 </div>
                 <div id="property-thumbs" class="flexslider">
                   <ul class="slides">
-                    <li class="item"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </li>
-                    <li class="item"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </li>
-                    <li class="item"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </li>
-                    <li class="item"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
                   </ul>
                 </div>
               </div>
               <div class="tabs">
                 <ul class="nav nav-tabs">
                   <li class="active"> <a data-toggle="tab" href="#description"> Description </a> </li>
-                  <li> <a data-toggle="tab" href="#amenities"> Additional Amenities </a> </li>
+                  <li> <a data-toggle="tab" href="#amenities"> Infos supplémentaires </a> </li>
                 </ul>
                 <div class="tab-content">
                   <div id="description" class="tab-pane active">
@@ -241,7 +190,7 @@
               <div class="agent">
               		<div class="row">
                     	<div class="col-md-4">
-                        	<img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="Mia Kennedy">
+                        	<img src="{{ asset('/images/600x400.png') }}" alt="Mia Kennedy">
                      	</div>
                     	<div class="col-md-8">
                       	<h4><a href="agent-single.php">Mia Keneddy</a></h4>
@@ -264,33 +213,33 @@
             <div class="property-grid">
               <ul class="grid-holder col-3">
                 <li class="grid-item type-rent">
-                  <div class="property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
+                  <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
                     <div class="property-info">
                       <h4><a href="#">116 Waverly Place</a></h4>
                       <span class="location">NYC</span>
-                      <div class="price"><strong>$</strong><span>2800 Monthly</span></div>
+                      <div class="price"><span>60000/Mois</span><strong>CFA</strong></div>
                     </div>
-                    <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="beds"><strong>3</strong>Beds</span> <span class="parking"><strong>1</strong>Parking</span> </div>
+                    <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>m2</span> <span class="baths"><strong>3</strong>Douches</span> <span class="beds"><strong>3</strong>Chambres</span><span class="parking"><strong>3</strong>Cuisines</span></div>
                   </div>
                 </li>
                 <li class="grid-item type-buy">
-                  <div class="property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
+                  <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                     <div class="property-info">
                       <h4><a href="#">232 East 63rd Street</a></h4>
                       <span class="location">NYC</span>
-                      <div class="price"><strong>$</strong><span>250000</span></div>
+                      <div class="price"><span>250 000</span><strong>CFA</strong></div>
                     </div>
-                    <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="beds"><strong>3</strong>Beds</span> <span class="parking"><strong>1</strong>Parking</span> </div>
+                    <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>m2</span> <span class="baths"><strong>3</strong>Douches</span> <span class="beds"><strong>3</strong>Chambres</span><span class="parking"><strong>3</strong>Cuisines</span></div>
                   </div>
                 </li>
                 <li class="grid-item type-rent">
-                  <div class="property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
+                  <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                     <div class="property-info">
                       <h4><a href="#">55 Warren Street</a></h4>
                       <span class="location">NYC</span>
-                      <div class="price"><strong>$</strong><span>300000</span></div>
+                      <div class="price"><span>300 000</span><strong>CFA</strong></div>
                     </div>
-                    <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>Area</span> <span class="baths"><strong>3</strong>Baths</span> <span class="beds"><strong>3</strong>Beds</span> <span class="parking"><strong>1</strong>Parking</span> </div>
+                    <div class="property-amenities clearfix"> <span class="area"><strong>5000</strong>m2</span> <span class="baths"><strong>3</strong>Douches</span> <span class="beds"><strong>3</strong>Chambres</span><span class="parking"><strong>3</strong>Cuisines</span></div>
                   </div>
                 </li>
               </ul>
@@ -299,59 +248,60 @@
           <!-- Start Sidebar -->
           <div class="sidebar right-sidebar col-md-3">
             <div class="widget sidebar-widget">
-              <h3 class="widgettitle">Search Properties</h3>
+              <h3 class="widgettitle">Rechercher un bien</h3>
               <div class="full-search-form">
                   <form action="#">
                       <select name="propery type" class="form-control input-lg selectpicker">
                           <option selected>Type</option>
                         <option>Villa</option>
-                        <option>Family House</option>
-                        <option>Single Home</option>
-                        <option>Cottage</option>
-                        <option>Apartment</option>
+                        <option>Maison</option>
+                        <option>Studio</option>
+                        <option>location</option>
+                        <option>Appartement</option>
                       </select>
                       <select name="propery contract type" class="form-control input-lg selectpicker">
                           <option selected>Contract</option>
-                        <option>Rent</option>
-                        <option>Buy</option>
+                        <option>Louer</option>
+                        <option>Acheter</option>
                       </select>
                       <select name="propery location" class="form-control input-lg selectpicker">
-                          <option selected>Location</option>
-                        <option>New York</option>
+                          <option selected>Localisation</option>
+                        <option>Abidjan</option>
+                        <option>Grand Bassam</option>
                       </select>
-                    <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search"></i> Search</button>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search"></i> rechercher</button>
                 </form>
               </div>
             </div>
             <div class="widget sidebar-widget featured-properties-widget">
               <h3 class="widgettitle">Featured Properties</h3>
               <ul class="owl-carousel owl-alt-controls1 single-carousel" data-columns="1" data-autoplay="no" data-pagination="no" data-arrows="yes" data-single-item="yes">
-                <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
+                <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
                   <div class="property-info">
                     <h4><a href="#">116 Waverly Place</a></h4>
                     <span class="location">NYC</span>
-                    <div class="price"><strong>$</strong><span>2800 Monthly</span></div>
+                    <div class="price"><span>2800/Mois</span><strong>CFA</strong></div>
                   </div>
                 </li>
-                <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
+                <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                   <div class="property-info">
                     <h4><a href="#">232 East 63rd Street</a></h4>
                     <span class="location">NYC</span>
-                    <div class="price"><strong>$</strong><span>250000</span></div>
+                    <div class="price"><span>250000</span><strong>CFA</strong></div>
                   </div>
                 </li>
-                <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
+                <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                   <div class="property-info">
                     <h4><a href="#">55 Warren Street</a></h4>
                     <span class="location">NYC</span>
-                    <div class="price"><strong>$</strong><span>300000</span></div>
+                    <div class="price"><span>300000</span><strong>CFA</strong></div>
                   </div>
                 </li>
-                <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
+                <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
                   <div class="property-info">
                     <h4><a href="#">459 West Broadway</a></h4>
                     <span class="location">NYC</span>
-                    <div class="price"><strong>$</strong><span>3100 Monthly</span></div>
+                    <div class="price"><span>3100/Mois</span><strong>CFA</strong></div>
                   </div>
                 </li>
               </ul>
@@ -431,14 +381,14 @@
   <!-- End Site Footer -->
   <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
-<script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call -->
-<script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
-<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel -->
-<script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
-<script src="js/helper-plugins.js"></script> <!-- Plugins -->
-<script src="js/bootstrap.js"></script> <!-- UI -->
-<script src="js/waypoints.js"></script> <!-- Waypoints -->
-<script src="js/init.js"></script> <!-- All Scripts -->
+<script src="{{ asset('/js/jquery-2.0.0.min.js') }}"></script>
+<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script>
+<script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js') }}"></script>
+<script src="{{ asset('/js/helper-plugins.js') }}"></script>
+<script src="{{ asset('/js/bootstrap.js') }}"></script>
+<script src="{{ asset('/js/waypoints.js') }}"></script>
+<script src="{{ asset('/js/init.js') }}"></script> <!-- All Scripts -->
 <!--[if lte IE 9]><script src="js/script_ie.js"></script><![endif]-->
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script> <!-- Google Map -->
 <script type="text/javascript">
