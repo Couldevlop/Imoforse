@@ -62,9 +62,30 @@ Route::get('/blog', function () {
 ;Route::get('/propertyDetail', function () {
     return view('property-detail');
 });
+
+;Route::get('/achatMaison', function () {
+    return view('achat-maison');
+});
+;Route::get('/venteTerrain', function () {
+    return view('vente-terrain');
+});
+;Route::get('/locationSaisonniere', function () {
+    return view('location-saisonniere');
+});
+
+
+;Route::get('/listView', function () {
+    return view('simple-listing');
+});
+;Route::get('/gridListing', function () {
+    return view('grid-listing');
+});
+;Route::get('/gridListingFw', function () {
+    return view('grid-listing-fw');
+});
+;Route::get('/gridMap', function () {
+    return view('grid-map');
+});
 ;Route::get('/agentDetail', function () {
     return view('agent-detail');
-});
-;Route::get('/propertyType', function () {
-    return view('property-type');
 });

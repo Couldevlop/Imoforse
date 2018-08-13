@@ -111,9 +111,9 @@
               <ul class="sf-menu">
                 <li><a href="{{ url('/') }}">Accueil</a></li>
                 <li><a href="{{ url('/about') }}">A Propos</a></li>
-                <li><a href="{{ url('/propertyType') }}">Achat/Location</a></li>
-                <li><a href="{{ url('/propertyType') }}">Location Saisonnière</a> </li>
-                <li><a href="{{ url('/propertyType') }}">Achat de terrain</a> </li>
+                <li><a href="{{ url('/achatMaison') }}">Achat/Location</a> </li>
+                <li><a href="{{ url('/locationSaisonniere') }}">Location Saisonnière</a> </li>
+                <li><a href="{{ url('/venteTerrain') }}">Achat de Terrain</a></li>
                 <li><a href="{{ url('/galerie') }}">Galérie</a> </li>
                 <li><a href="{{ url('/blog') }}">Blog</a></li>
                 <li><a href="{{ url('/contact') }}">Contact</a></li>

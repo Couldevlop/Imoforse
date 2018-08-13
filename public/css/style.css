@@ -1271,6 +1271,10 @@ html[xmlns] .slides {
 	display:block;
 	font-size:14px;
 }
+.property-amenities > span.date{
+    width: 75%;
+    padding-top:15px;
+}
 .property-info h4, .agent-info h4{
 	margin-bottom:0;
 }
@@ -1281,7 +1285,7 @@ html[xmlns] .slides {
 }
 .price, .counts{
 	display:inline-block;
-	background:#666;
+	background:#373d5d;
 	color:#fff;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
@@ -1438,7 +1442,8 @@ html[xmlns] .slides {
 	color:#999;
 }
 .site-footer{
-	background-color:#f8f8f8;
+	/*background-color:#f8f8f8;*/
+	background-color:#373d5d;
 	padding:30px 0 0 0;
 	box-shadow:inset 0 2px 2px rgba(0,0,0,.07);
 }
@@ -1469,7 +1474,15 @@ html[xmlns] .slides {
 	margin:0 0 0 8px;
 	text-decoration:none;
 }
-
+.site-footer h1, .site-footer h2, .site-footer h3, .site-footer p, .site-footer ul li{
+    color: #ffffff;
+}
+.site-footer h3{
+    font-weight: 600;
+}
+.site-footer ul li a{
+    color: #ffffff;
+}
 /* Property Listing */
 .property-listing > ul > li, .agents-listing > ul > li{
 	border:1px solid #eee;

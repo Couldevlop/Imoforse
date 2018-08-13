@@ -1,0 +1,9 @@
+<script src="{{ asset('/js/jquery-2.0.0.min.js')}} "></script>
+<script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js')}} "></script>
+<script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js')}} "></script>
+<script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js')}} "></script>
+<script src="{{ asset('/js/helper-plugins.js')}} "></script>
+<script src="{{ asset('/js/bootstrap.js')}} "></script>
+<script src="{{ asset('/js/waypoints.js')}} "></script>
+<script src="{{ asset('/js/init.js')}} "></script> <!-- All Scripts -->
+<!--[if lte IE 9]><script src="js/script_ie.js"></script><![endif]-->

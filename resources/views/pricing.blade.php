@@ -101,7 +101,7 @@
                 <li><a href="javascript:;">Pages</a>
                   <ul class="dropdown">
                     <li><a href="agents.php">Agents</a></li>
-                    <li><a href="agent-detail.php">Agent Single</a></li>
+                    <li><a href="{{ url('/agentDetail') }}">Agent Single</a></li>
                     <li><a href="my-properties.php">Agent Properties</a></li>
                     <li><a href="submit.php">List a property</a></li>
                     <li><a href="pricing.php">Pricing</a></li>

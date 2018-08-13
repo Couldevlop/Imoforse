@@ -101,7 +101,7 @@
                 <li><a href="javascript:;">Pages</a>
                   <ul class="dropdown">
                     <li><a href="agents.php">Agents</a></li>
-                    <li><a href="agent-detail.php">Agent Single</a></li>
+                    <li><a href="{{ url('/agentDetail') }}">Agent Single</a></li>
                     <li><a href="{{ url('/myProperties') }}">Agent Properties</a></li>
                     <li><a href="{{ url('/submitProperty') }}">List a property</a></li>
                     <li><a href="{{ url('/pricing.php') }}">Pricing</a></li>
@@ -194,7 +194,7 @@
                     <div class="property-listing row">
                         <ul class="col-md-12">
                           <li class="type-rent col-md-12">
-                            <div class="col-md-4"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a> </div>
+                            <div class="col-md-4"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a> </div>
                             <div class="col-md-8">
                               <div class="property-info">
                                 <div class="price"><strong>$</strong><span>2800 Monthly</span></div>
@@ -206,7 +206,7 @@
                             </div>
                           </li>
                           <li class="type-rent col-md-12">
-                            <div class="col-md-4"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a> </div>
+                            <div class="col-md-4"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a> </div>
                             <div class="col-md-8">
                               <div class="property-info">
                                 <div class="price"><strong>$</strong><span>250000</span></div>
@@ -218,7 +218,7 @@
                             </div>
                           </li>
                           <li class="type-rent col-md-12">
-                            <div class="col-md-4"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a> </div>
+                            <div class="col-md-4"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a> </div>
                             <div class="col-md-8">
                               <div class="property-info">
                                 <div class="price"><strong>$</strong><span>300000</span></div>
@@ -271,28 +271,28 @@
                     <div class="widget sidebar-widget featured-properties-widget">
                         <h3 class="widgettitle">Featured Properties</h3>
                         <ul class="owl-carousel owl-alt-controls1 single-carousel" data-columns="1" data-autoplay="no" data-pagination="no" data-arrows="yes" data-single-item="yes">
-                          <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
+                          <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
                             <div class="property-info">
                               <h4><a href="#">116 Waverly Place</a></h4>
                               <span class="location">NYC</span>
                               <div class="price"><strong>$</strong><span>2800 Monthly</span></div>
                             </div>
                           </li>
-                          <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
+                          <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
                             <div class="property-info">
                               <h4><a href="#">232 East 63rd Street</a></h4>
                               <span class="location">NYC</span>
                               <div class="price"><strong>$</strong><span>250000</span></div>
                             </div>
                           </li>
-                          <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
+                          <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
                             <div class="property-info">
                               <h4><a href="#">55 Warren Street</a></h4>
                               <span class="location">NYC</span>
                               <div class="price"><strong>$</strong><span>300000</span></div>
                             </div>
                           </li>
-                          <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
+                          <li class="item property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
                             <div class="property-info">
                               <h4><a href="#">459 West Broadway</a></h4>
                               <span class="location">NYC</span>
