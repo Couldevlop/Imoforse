@@ -252,10 +252,10 @@
 <script src="{{ asset('/plugins/prettyphoto/js/prettyphoto.js') }}"></script>
 <script src="{{ asset('/plugins/owl-carousel/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('/plugins/flexslider/js/jquery.flexslider.js') }}"></script>
-<script src="{{ asset('/js/helper-plugins.js') }}"></script> 
-<script src="{{ asset('/js/bootstrap.js') }}"></script> 
+<script src="{{ asset('/js/helper-plugins.js') }}"></script>
+<script src="{{ asset('/js/bootstrap.js') }}"></script>
 <script src="{{ asset('/js/waypoints.js') }}"></script>
-<script src="{{ asset('/js/init.js') }}"></script> 
+<script src="{{ asset('/js/init.js') }}"></script>
 <!--[if lte IE 9]><script src="js/script_ie.js"></script><![endif]-->
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script> <!-- Google Map -->
 <script type="text/javascript">
