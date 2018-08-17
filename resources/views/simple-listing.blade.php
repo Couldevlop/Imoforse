@@ -13,7 +13,7 @@
     <div class="property-listing">
         <ul>
             <li class="type-rent col-md-12">
-                <div class="col-md-4"> <a href="{{url('/propertyDetail')}}" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a> </div>
+                <div class="col-md-4"> <a href="{{url('/propertyDetail')}}" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a> </div>
                 <div class="col-md-8">
                     <div class="property-info">
                         <div class="price"><span>200.000/Mois</span><strong>FCFA</strong></div>
@@ -25,7 +25,7 @@
                 </div>
             </li>
             <li class="type-rent col-md-12">
-                <div class="col-md-4"> <a href="{{url('/propertyDetail')}}" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a> </div>
+                <div class="col-md-4"> <a href="{{url('/propertyDetail')}}" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a> </div>
                 <div class="col-md-8">
                     <div class="property-info">
                         <div class="price"><span>250.000.000</span><strong>FCFA</strong></div>
@@ -37,7 +37,7 @@
                 </div>
             </li>
             <li class="type-rent col-md-12">
-                <div class="col-md-4"> <a href="{{url('/propertyDetail')}}" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a> </div>
+                <div class="col-md-4"> <a href="{{url('/propertyDetail')}}" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a> </div>
                 <div class="col-md-8">
                     <div class="property-info">
                         <div class="price"><span>120.000.000</span><strong>FCFA</strong></div>

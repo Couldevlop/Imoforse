@@ -10,18 +10,18 @@
         <div class="property-slider">
             <div id="property-images" class="flexslider">
                 <ul class="slides">
-                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
                 </ul>
             </div>
             <div id="property-thumbs" class="flexslider">
                 <ul class="slides">
-                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/images/600x400.png') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
                 </ul>
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="agent">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="{{ asset('/images/600x400.png') }}" alt="Mia Kennedy">
+                    <img src="{{ asset('/data/specimen.jpg') }}" alt="Mia Kennedy">
                 </div>
                 <div class="col-md-8">
                     <h4><a href="agent-single.php">Mia Keneddy</a></h4>
@@ -83,7 +83,7 @@
     <div class="property-grid">
         <ul class="grid-holder col-3">
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
+                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
                     <div class="property-info">
                         <h4><a href="#">116 Waverly Place</a></h4>
                         <span class="location">NYC</span>
@@ -93,7 +93,7 @@
                 </div>
             </li>
             <li class="grid-item type-buy">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
+                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                     <div class="property-info">
                         <h4><a href="#">232 East 63rd Street</a></h4>
                         <span class="location">NYC</span>
@@ -103,7 +103,7 @@
                 </div>
             </li>
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
+                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                     <div class="property-info">
                         <h4><a href="#">55 Warren Street</a></h4>
                         <span class="location">NYC</span>

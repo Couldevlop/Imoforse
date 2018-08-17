@@ -7,28 +7,28 @@
         <div class="row">
             <ul>
                 <li class="col-md-3 col-sm-6 gallery-item format-image">
-                    <div class="grid-item-inner"> <a href="{{ asset('images/600x400.png') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('images/600x400.png') }}" alt=""> </a> </div>
+                    <div class="grid-item-inner"> <a href="{{ asset('data/specimen.jpg') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('data/specimen.jpg') }}" alt=""> </a> </div>
                 </li>
                 <li class="col-md-3 col-sm-6 gallery-item format-image">
-                    <div class="grid-item-inner"> <a href="{{ asset('images/600x400.png') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('images/600x400.png') }}" alt=""> </a> </div>
+                    <div class="grid-item-inner"> <a href="{{ asset('data/specimen.jpg') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('data/specimen.jpg') }}" alt=""> </a> </div>
                 </li>
                 <li class="col-md-3 col-sm-6 gallery-item format-image">
-                    <div class="grid-item-inner"> <a href="{{ asset('images/600x400.png') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('images/600x400.png') }}" alt=""> </a> </div>
+                    <div class="grid-item-inner"> <a href="{{ asset('data/specimen.jpg') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('data/specimen.jpg') }}" alt=""> </a> </div>
                 </li>
                 <li class="col-md-3 col-sm-6 gallery-item format-image">
-                    <div class="grid-item-inner"> <a href="{{ asset('images/600x400.png') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('images/600x400.png') }}" alt=""> </a> </div>
+                    <div class="grid-item-inner"> <a href="{{ asset('data/specimen.jpg') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('data/specimen.jpg') }}" alt=""> </a> </div>
                 </li>
                 <li class="col-md-3 col-sm-6 gallery-item format-image">
-                    <div class="grid-item-inner"> <a href="{{ asset('images/600x400.png') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('images/600x400.png') }}" alt=""> </a> </div>
+                    <div class="grid-item-inner"> <a href="{{ asset('data/specimen.jpg') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('data/specimen.jpg') }}" alt=""> </a> </div>
                 </li>
                 <li class="col-md-3 col-sm-6 gallery-item format-image">
-                    <div class="grid-item-inner"> <a href="{{ asset('images/600x400.png') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('images/600x400.png') }}" alt=""> </a> </div>
+                    <div class="grid-item-inner"> <a href="{{ asset('data/specimen.jpg') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('data/specimen.jpg') }}" alt=""> </a> </div>
                 </li>
                 <li class="col-md-3 col-sm-6 gallery-item format-image">
-                    <div class="grid-item-inner"> <a href="{{ asset('images/600x400.png') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('images/600x400.png') }}" alt=""> </a> </div>
+                    <div class="grid-item-inner"> <a href="{{ asset('data/specimen.jpg') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('data/specimen.jpg') }}" alt=""> </a> </div>
                 </li>
                 <li class="col-md-3 col-sm-6 gallery-item format-image">
-                    <div class="grid-item-inner"> <a href="{{ asset('images/600x400.png') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('images/600x400.png') }}" alt=""> </a> </div>
+                    <div class="grid-item-inner"> <a href="{{ asset('data/specimen.jpg') }}" data-rel="prettyPhoto[gallery]" class="media-box"> <img src="{{ asset('data/specimen.jpg') }}" alt=""> </a> </div>
                 </li>
             </ul>
         </div>

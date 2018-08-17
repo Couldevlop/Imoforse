@@ -8,7 +8,7 @@
         <h2 class="page-title">John Doe</h2>
         <div class="row">
             <div class="col-md-6 col-sm-6">
-                <img src="{{ asset('/images/600x400.png') }}" alt="Mia Kennedy" class="img-thumbnail">
+                <img src="{{ asset('/data/agents/img-1.jpg') }}" alt="image agence" class="img-thumbnail">
             </div>
             <div class="col-md-6 col-sm-6">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula dapibus mauris, quis ullamcorper enim aliquet sed. Maecenas quis eget tellus dui. Vivamus condimentum egestas.</p>
@@ -38,8 +38,8 @@
                 <div class="agent-contact-form">
                     <h4>Contactez l'Agent</h4>
                     <form>
-                        <input type="email" name="Email Address" class="form-control" placeholder="Email Address">
-                        <textarea name="comments" class="form-control" placeholder="Your message" cols="10" rows="5"></textarea>
+                        <input type="email" name="Email Address" class="form-control" placeholder="Email">
+                        <textarea name="comments" class="form-control" placeholder="Votre message" cols="10" rows="5"></textarea>
                         <button type="submit" class="btn btn-primary pull-right">Envoyer</button>
                     </form>
                 </div>
@@ -53,7 +53,7 @@
     <div class="property-grid">
         <ul class="grid-holder col-3">
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
+                <div class="property-block"> <a href="{{ url('/propertyDetail') }}" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                     <div class="property-info">
                         <h4><a href="#">Vente de Terrain 1500m2</a></h4>
                         <span class="location">Bingerville</span>
@@ -63,7 +63,7 @@
                 </div>
             </li>
             <li class="grid-item type-buy">
-                <div class="property-block"> <a href="{{ url('/propertyDetail') }}" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
+                <div class="property-block"> <a href="{{ url('/propertyDetail') }}" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                     <div class="property-info">
                         <h4><a href="#">Villa Duplex</a></h4>
                         <span class="location">Treichville</span>
@@ -73,7 +73,7 @@
                 </div>
             </li>
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="{{ url('/propertyDetail') }}" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
+                <div class="property-block"> <a href="{{ url('/propertyDetail') }}" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
                     <div class="property-info">
                         <h4><a href="#">Location appartement</a></h4>
                         <span class="location">Cocody Riviera Palmeraie</span>

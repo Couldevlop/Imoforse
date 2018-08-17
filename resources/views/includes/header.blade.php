@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <ul class="horiz-nav pull-left">
-                        <li class="dropdown"><a href="{{ url('/login') }}" data-toggle="dropdown"><i class="fa fa-user"></i> Connexion <b class="caret"></b></a>
+                        <li class="dropdown"><a href="{{ url('/login') }}"><i class="fa fa-user"></i> Connexion <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{ url('/myProperties')}}">Mes propriétés</a></li>
                                 <li><a href=" {{ url('/submit')}} ">Ajouter une propriété</a></li>
@@ -61,7 +61,6 @@
                             <li><a href="{{ url('/achatMaison') }}">Achat/Location</a> </li>
                             <li><a href="{{ url('/locationSaisonniere') }}">Location saisonnière</a></li>
                             <li><a href="{{ url('/venteTerrain') }}">Achat de Terrain</a></li>
-                            <li><a href="{{ url('/galerie') }}">Galérie</a></li>
                             <li><a href="{{ url('/blog') }}">Blog</a> </li>
                             <li><a href="{{ url('/contact') }}">Contact</a></li>
                         </ul>

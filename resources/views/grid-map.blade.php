@@ -13,7 +13,7 @@
     <div class="property-grid">
         <ul class="grid-holder col-3">
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
+                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
                     <div class="property-info">
                         <h4><a href="#">116 Waverly Place</a></h4>
                         <span class="location">NYC</span>
@@ -23,7 +23,7 @@
                 </div>
             </li>
             <li class="grid-item type-buy">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
+                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
                     <div class="property-info">
                         <h4><a href="#">232 East 63rd Street</a></h4>
                         <span class="location">NYC</span>
@@ -33,7 +33,7 @@
                 </div>
             </li>
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
+                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
                     <div class="property-info">
                         <h4><a href="#">55 Warren Street</a></h4>
                         <span class="location">NYC</span>
@@ -43,7 +43,7 @@
                 </div>
             </li>
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
+                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
                     <div class="property-info">
                         <h4><a href="#">459 West Broadway</a></h4>
                         <span class="location">NYC</span>
@@ -53,7 +53,7 @@
                 </div>
             </li>
             <li class="grid-item type-buy">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
+                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Buy</span> </a>
                     <div class="property-info">
                         <h4><a href="#">70 Greene Street</a></h4>
                         <span class="location">NYC</span>
@@ -63,7 +63,7 @@
                 </div>
             </li>
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/images/600x400.png') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
+                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Rent</span> </a>
                     <div class="property-info">
                         <h4><a href="#">115 Allen Street </a></h4>
                         <span class="location">NYC</span>

@@ -6,32 +6,60 @@
     <div class="container">
         <div class="page">
             <div class="row">
-                <div class="col-md-4 col-sm-4">
-                </div>
-                <div class="col-md-4 col-sm-4 register-form">
+                <div class="col-md-8 col-sm-4 col-md-push-2 register-form">
                     <h3>Inscription</h3>
                     <form>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Utilisateur">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" name="nom" class="form-control" placeholder="Nom">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" name="prenom" class="form-control" placeholder="Prénom">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="text" name="fonction" class="form-control" placeholder="Fonction">
+                            </div>
+                            <br>
                         </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input type="email" class="form-control" placeholder="Email">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="text" name="contact1" class="form-control" placeholder="Contact 1">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="text" name="contact2" class="form-control" placeholder="Contact 2">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="text" name="agence" class="form-control" placeholder="Nom agence">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="Mot de passe">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-refresh"></i></span>
+                                <input type="password" class="form-control" placeholder="Confirmer mot de passe">
+                            </div>
+                            <br>
                         </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                            <input type="password" class="form-control" placeholder="Mot de passe">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-refresh"></i></span>
-                            <input type="password" class="form-control" placeholder="Confirmer mot de passe">
-                        </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary">S'inscrire</button>
+                        <div class="clearfix text-center">
+                        <button type="submit" class="btn btn-primary">S'inscrire</button></div>
                     </form>
                 </div>
             </div>

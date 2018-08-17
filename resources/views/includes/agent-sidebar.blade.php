@@ -4,7 +4,7 @@
         <li>
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-5">
-                    <a href="{{ url('/agentDetail') }}"><img src="{{ asset('/images/600x400.png') }}" alt="Brooklyn Coyle" class="img-thumbnail"></a>
+                    <a href="{{ url('/agentDetail') }}"><img src="{{ asset('/data/specimen.jpg') }}" alt="Brooklyn Coyle" class="img-thumbnail"></a>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-7">
                     <strong><a href="{{ url('/agentDetail') }}">John Doe</a></strong>
@@ -15,7 +15,7 @@
         <li>
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-5">
-                    <a href="{{ url('/agentDetail') }}"><img src="{{ asset('/images/600x400.png') }}" alt="Ben Patel" class="img-thumbnail"></a>
+                    <a href="{{ url('/agentDetail') }}"><img src="{{ asset('/data/specimen.jpg') }}" alt="Ben Patel" class="img-thumbnail"></a>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-7">
                     <strong><a href="{{ url('/agentDetail') }}">John Doe</a></strong>
@@ -26,7 +26,7 @@
         <li>
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-5">
-                    <a href="{{ url('/agentDetail') }}"><img src="{{ asset('/images/600x400.png') }}" alt="Emma Dumas" class="img-thumbnail"></a>
+                    <a href="{{ url('/agentDetail') }}"><img src="{{ asset('/data/specimen.jpg') }}" alt="Emma Dumas" class="img-thumbnail"></a>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-7">
                     <strong><a href="{{ url('/agentDetail') }}">John Doa</a></strong>
@@ -36,14 +36,14 @@
         </li>
     </ul>
 </div>
-<!-- Featured Properties Widget -->
+<!-- Les dernières offres Widget -->
 <div class="widget sidebar-widget widget-properties">
-    <h3 class="widgettitle">Featured Properties</h3>
+    <h3 class="widgettitle">Les dernières offres</h3>
     <ul>
         <li>
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-5">
-                    <a href="{{ url('/propertyDetail') }}"><img src="{{ asset('/images/600x400.png') }}" alt="" class="img-thumbnail"></a>
+                    <a href="{{ url('/propertyDetail') }}"><img src="{{ asset('/data/specimen.jpg') }}" alt="" class="img-thumbnail"></a>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-7">
                     <strong><a href="{{ url('/propertyDetail') }}">116 Waverly Place</a></strong>
@@ -54,7 +54,7 @@
         <li>
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-5">
-                    <a href="{{ url('/propertyDetail') }}"><img src="{{ asset('/images/600x400.png') }}" alt="" class="img-thumbnail"></a>
+                    <a href="{{ url('/propertyDetail') }}"><img src="{{ asset('/data/specimen.jpg') }}" alt="" class="img-thumbnail"></a>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-7">
                     <strong><a href="{{ url('/propertyDetail') }}">70 Greene Street</a></strong>
@@ -65,7 +65,7 @@
         <li>
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-5">
-                    <a href="{{ url('/propertyDetail') }}"><img src="{{ asset('/images/600x400.png') }}" alt="" class="img-thumbnail"></a>
+                    <a href="{{ url('/propertyDetail') }}"><img src="{{ asset('/data/specimen.jpg') }}" alt="" class="img-thumbnail"></a>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-7">
                     <strong><a href="{{ url('/propertyDetail') }}">55 Warren Street</a></strong>

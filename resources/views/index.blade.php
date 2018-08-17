@@ -10,7 +10,7 @@
                     <div class="price"><span>100 000</span><strong>FCFA</strong></div>
                     <a href="{{ url('/propertyDetail') }}" class="btn btn-primary btn-block">Details</a>
                     <div class="hero-agent">
-                        <img src="{{ asset('images/365x365.png') }}" alt="" class="hero-agent-pic">
+                        <img src="{{ asset('data/agents/avatar.jpg') }}" alt="" class="hero-agent-pic">
                         <a href="{{ url('/agentDetail') }}" class="hero-agent-contact" data-placement="left"  data-toggle="tooltip" title="" data-original-title="Contact Agent"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
@@ -20,7 +20,7 @@
                     <strong class="title">1671 Grand Avenue, <em>Marcory</em></strong>
                     <div class="price"><span>100 000</span><strong>FCFA</strong></div> <a href="{{ url('/propertyDetail') }}" class="btn btn-primary btn-block">Details</a>
                     <div class="hero-agent">
-                        <img src="{{ asset('images/365x365.png') }}" alt="" class="hero-agent-pic">
+                        <img src="{{ asset('data/agents/avatar.jpg') }}" alt="" class="hero-agent-pic">
                         <a href="{{ url('/agentDetail') }}" class="hero-agent-contact" data-placement="left"  data-toggle="tooltip" title="" data-original-title="Contact Agent"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
@@ -38,11 +38,15 @@
                             <div class="col-md-2">
                                 <select name="propery type" class="form-control input-lg selectpicker">
                                     <option selected>Type de propriété</option>
-                                    <option>Villa</option>
-                                    <option>Maison</option>
-                                    <option>Location</option>
-                                    <option>Appartement</option>
-                                    <option>Terrain</option>
+                                    <option selected>Type</option>
+                                    <option value="apartment">Appartement</option>
+                                    <option value="bureau">Bureau</option>
+                                    <option value="triplex">Triplex</option>
+                                    <option value="studio">Studio</option>
+                                    <option value="deux-pieces">Deux pièces</option>
+                                    <option value="trois-pieces">Trois pièces</option>
+                                    <option value="more-pieces">Quatre, cinq pièces</option>
+                                    <option value="villa">Villa basse</option>
                                 </select>
                             </div>
                             <div class="col-md-3">
@@ -307,7 +311,7 @@
                 <ul class="owl-carousel owl-alt-controls" data-columns="4" data-autoplay="no" data-pagination="no" data-arrows="yes" data-single-item="no">
                     <li class="item property-block">
                         <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
-                            <img src="{{ asset('data/600x400.png') }}" alt="">
+                            <img src="{{ asset('data/specimen.jpg') }}" alt="">
                             <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                             <span class="badges">Louer</span>
                         </a>
@@ -319,7 +323,7 @@
                     </li>
                     <li class="item property-block">
                         <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
-                            <img src="{{ asset('data/600x400.png') }}" alt="">
+                            <img src="{{ asset('data/specimen.jpg') }}" alt="">
                             <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                             <span class="badges">Acheter</span>
                         </a>
@@ -331,7 +335,7 @@
                     </li>
                     <li class="item property-block">
                         <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
-                            <img src="{{ asset('data/600x400.png') }}" alt="">
+                            <img src="{{ asset('data/specimen.jpg') }}" alt="">
                             <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                             <span class="badges">Acheter</span>
                         </a>
@@ -343,7 +347,7 @@
                     </li>
                     <li class="item property-block">
                         <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
-                            <img src="{{ asset('data/600x400.png') }}" alt="">
+                            <img src="{{ asset('data/specimen.jpg') }}" alt="">
                             <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                             <span class="badges">Louer</span>
                         </a>
@@ -355,7 +359,7 @@
                     </li>
                     <li class="item property-block">
                         <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
-                            <img src="{{ asset('data/600x400.png') }}" alt="">
+                            <img src="{{ asset('data/specimen.jpg') }}" alt="">
                             <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                             <span class="badges">Acheter</span>
                         </a>
@@ -367,7 +371,7 @@
                     </li>
                     <li class="item property-block">
                         <a href="{{ url('/propertyDetail') }}" class="property-featured-image">
-                            <img src="{{ asset('data/600x400.png') }}" alt="">
+                            <img src="{{ asset('data/specimen.jpg') }}" alt="">
                             <span class="images-count"><i class="fa fa-picture-o"></i> 2</span>
                             <span class="badges">Louer</span>
                         </a>
@@ -390,36 +394,29 @@
                         <li>
                             <div class="icon"><i class="fa fa-umbrella"></i></div>
                             <div class="text">
-                                <h4>Lots of possibilities</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h4>Offres variées</h4>
+                                <p>Découvrez de nombreuses ofrres.</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"><i class="fa fa-list"></i></div>
                             <div class="text">
-                                <h4>Property list view</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h4>Paiements sécurisés</h4>
+                                <p>Vos paiements en ligne sont sécurisés et garanties</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"><i class="fa fa-search"></i></div>
                             <div class="text">
                                 <h4>Recherche avancée</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"><i class="fa fa-users"></i></div>
-                            <div class="text">
-                                <h4>Agents Profile</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Effectuer des recherches plus sophistiquées</p>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-sm-4 popular-agent column">
                     <h3>Nos Agents</h3>
-                    <a href="{{ url('/agentDetail')}}"><img src="{{ asset('/images/600x400.png') }}" alt="" class="img-thumbnail"></a>
+                    <a href="{{ url('/agentDetail')}}"><img src="{{ asset('/data/specimen.jpg') }}" alt="" class="img-thumbnail"></a>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <h4><a href="{{ url('/agentDetail') }}">John doe</a></h4>
@@ -438,7 +435,7 @@
                     <ul class="testimonials">
                         <li>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                            <img src="{{ asset('/images/80x80.png') }}" alt="Happy Client" class="testimonial-sender">
+                            <img src="{{ asset('/data/testimonials/img-1.jpg') }}" alt="Témoignages clients" class="testimonial-sender">
                             <cite>Mellisa - <strong>My company</strong>
                                 <br><a href="#">www.companyurl.com</a>
                             </cite>

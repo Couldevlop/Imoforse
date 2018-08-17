@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-6 footer-widget widget">
                 <h3 class="widgettitle">Imoforse</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellat sit enim voluptas ad id ut nemo similique nobis minus autem impedit.</p>
+                <p>Imoforse est une plateforme qui offres des services dans la location immobilière , l'achat de maison, la gestion immobilière.</p>
                 <ul>
                     <li><i class="fa fa-phone"></i> (+225) 22 00 00 00</li>
                     <li><i class="fa fa-envelope"></i> infos@imoforse.net</li>
@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="{{ url('/about')}}">A Propos</a></li>
                     <li><a href="{{ url('/submit')}}">Publier une annonce</a></li>
-                    <li><a href="{{ url('/login')}}">Become an agent</a></li>
+                    <li><a href="{{ url('/login')}}">S'abonner</a></li>
                     <li><a href="{{ url('/contact')}}">Contact</a></li>
                 </ul>
             </div>
@@ -41,8 +41,8 @@
             </div>
             <div class="col-md-3 col-sm-6 footer-widget widget">
                 <h3 class="widgettitle">Newsletter</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.</p>
-                <form method="post" id="newsletterform" name="newsletterform" class="newsletter-form" action="mail/newsletter.php">
+                <p>Abonnez vous à notre newsletter et restez informer des dernières nouveautés de notre site</p>
+                <form method="post" id="newsletterform" name="newsletterform" class="newsletter-form" action="#">
                     <input type="email" name="nl-email" id="nl-email" placeholder="Entrer votre email" class="form-control">
                     <input type="submit" name="nl-submit" id="nl-submit" class="btn btn-primary btn-block btn-lg" value="S'Abonner'">
                 </form>

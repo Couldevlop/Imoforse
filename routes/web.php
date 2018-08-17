@@ -55,6 +55,9 @@ Route::get('/galerie', function () {
 });
 Route::get('/blog', function () {
     return view('blog');
+});
+Route::get('/blogSingle', function () {
+    return view('blog-single');
 })
 ;Route::get('/submit', function () {
     return view('submit');
