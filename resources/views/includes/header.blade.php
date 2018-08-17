@@ -11,7 +11,7 @@
                                 <li><a href="{{ url('/edit-agent-profile.php') }}">Mon profile</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('/register') }}""><i class="fa fa-check-circle"></i> Inscription</a></li>
+                        <li><a href="{{ url('/register') }}><i class="fa fa-check-circle"></i> Inscription</a></li>
                     </ul>
                 </div>
                 <div class="col-md-8 col-sm-6">
