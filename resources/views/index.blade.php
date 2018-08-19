@@ -7,22 +7,22 @@
             <li class=" parallax" style="background-image:url('{{ asset('data/slider/01.jpg') }}')">
                 <div class="flex-caption">
                     <strong class="title">1671 Grand Avenue, <em>Cocody Riviera</em></strong>
-                    <div class="price"><span>100 000</span><strong>FCFA</strong></div>
+                    <div class="price"><span>210 000 / mois</span><strong>FCFA</strong></div>
                     <a href="{{ url('/propertyDetail') }}" class="btn btn-primary btn-block">Details</a>
-                    <div class="hero-agent">
+                    <!--<div class="hero-agent">
                         <img src="{{ asset('data/agents/avatar.jpg') }}" alt="" class="hero-agent-pic">
                         <a href="{{ url('/agentDetail') }}" class="hero-agent-contact" data-placement="left"  data-toggle="tooltip" title="" data-original-title="Contact Agent"><i class="fa fa-envelope"></i></a>
-                    </div>
+                    </div>-->
                 </div>
             </li>
             <li class="parallax" style="background-image:url('{{ asset('data/slider/02.jpg') }} ')">
                 <div class="flex-caption">
                     <strong class="title">1671 Grand Avenue, <em>Marcory</em></strong>
-                    <div class="price"><span>100 000</span><strong>FCFA</strong></div> <a href="{{ url('/propertyDetail') }}" class="btn btn-primary btn-block">Details</a>
-                    <div class="hero-agent">
+                    <div class="price"><span>150.000 / mois</span><strong>FCFA</strong></div> <a href="{{ url('/propertyDetail') }}" class="btn btn-primary btn-block">Details</a>
+                <!--<div class="hero-agent">
                         <img src="{{ asset('data/agents/avatar.jpg') }}" alt="" class="hero-agent-pic">
                         <a href="{{ url('/agentDetail') }}" class="hero-agent-contact" data-placement="left"  data-toggle="tooltip" title="" data-original-title="Contact Agent"><i class="fa fa-envelope"></i></a>
-                    </div>
+                    </div>-->
                 </div>
             </li>
         </ul>

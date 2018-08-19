@@ -769,6 +769,11 @@ body.boxed .body .site-header, body.boxed .body .main-menu-wrapper{
 	text-decoration:none;
 	border-right:1px solid rgba(0,0,0,.05);
 }
+.navigation > ul > li > a.submit-property{
+    background:#FFA52A;
+    color: #ffffff;
+    font-weight: 600;
+}
 .navigation > ul > li:first-child > a{
 	border-left:1px solid rgba(0,0,0,.05);
 }
@@ -1093,6 +1098,11 @@ html[xmlns] .slides {
 	-ms-transition: right .3s .2s;
 	-o-transition: right .3s .2s;
 	transition: right .3s .2s;
+}
+.section-map{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 #gmap{
 	height:550px;

@@ -21,6 +21,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
+                        <div class="block-heading">
+                            <h4><span class="heading-icon"><i class="fa fa-home"></i></span>Voir les offres</h4>
+                            <div class="toggle-view pull-right">
+                                <a href="{{ url('/gridListing') }}"><i class="fa fa-th-large"></i></a>
+                                <a href="{{ url('/listView') }}" class="active"><i class="fa fa-th-list"></i></a>
+                            </div>
+                        </div>
                         @yield('content')
                     </div>
                     <div class="sidebar right-sidebar col-md-3">

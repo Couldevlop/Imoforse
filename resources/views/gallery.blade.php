@@ -1,4 +1,7 @@
 @extends('layouts.default')
+@section('title')
+    Galérie- Imoforse
+@stop
 @section('showcase')
 
 @stop

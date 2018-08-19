@@ -11,7 +11,7 @@
                                 <li><a href="{{ url('/edit-agent-profile.php') }}">Mon profile</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('/register') }}><i class="fa fa-check-circle"></i> Inscription</a></li>
+                        <li><a href="{{ url('/register') }}"><i class="fa fa-check-circle"></i> Inscription</a></li>
                     </ul>
                 </div>
                 <div class="col-md-8 col-sm-6">
@@ -60,9 +60,9 @@
                             <li><a href="{{ url('/about') }}">A Propos</a></li>
                             <li><a href="{{ url('/achatMaison') }}">Achat/Location</a> </li>
                             <li><a href="{{ url('/locationSaisonniere') }}">Location saisonnière</a></li>
-                            <li><a href="{{ url('/venteTerrain') }}">Achat de Terrain</a></li>
-                            <li><a href="{{ url('/blog') }}">Blog</a> </li>
+                            <li><a href="{{ url('/venteTerrain') }}">Vente de Terrain</a></li>
                             <li><a href="{{ url('/contact') }}">Contact</a></li>
+                            <li class="pull-right"><a href="{{ url('/submit') }}" class="submit-property">Publier une annonce</a></li>
                         </ul>
                     </nav>
                 </div>

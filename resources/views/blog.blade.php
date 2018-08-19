@@ -1,4 +1,7 @@
 @extends('layouts.blog-layout')
+@section('title')
+    Blog - Imoforse
+@stop
 @section('showcase')
 
 @stop

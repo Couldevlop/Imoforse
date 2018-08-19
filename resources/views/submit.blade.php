@@ -1,14 +1,9 @@
 @extends('layouts.default')
+@section('title')
+    Publier une annonce - Imoforse
+@stop
 @section('showcase')
-    <div class="parallax page-header" style="background-image:url('{{ asset('images/banner/1200X260.png') }}')">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Publier une annonce</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+
 @stop
 @section('content')
     <div class="container">
@@ -26,7 +21,7 @@
                                     <input type="text" class="form-control" placeholder="Nom de la propriété">
                                 </div>
                                 <div class="col-md-4 col-sm-4">
-                                    <input type="text" class="form-control" placeholder="Adresse">
+                                    <input type="text" class="form-control" placeholder="Addresse">
                                 </div>
                                 <div class="col-md-4 col-sm-4">
                                     <input type="text" class="form-control" placeholder="Localisation">
@@ -128,27 +123,27 @@
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Air Conditioning
+                                        <input type="checkbox">Climatisation
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Heating
+                                        <input type="checkbox">Chauffage
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Balcony
+                                        <input type="checkbox">Balcon
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Dishwasher
+                                        <input type="checkbox">Lave-vaisselle
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Pool
+                                        <input type="checkbox">Piscine
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
@@ -160,49 +155,49 @@
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Terrace
+                                        <input type="checkbox">Terrasse
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Microwave
+                                        <input type="checkbox">Four micro onde
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Fridge
+                                        <input type="checkbox">Frigo
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Cable TV
+                                        <input type="checkbox">TV
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Security Camera
+                                        <input type="checkbox">Caméra de sécurité
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Toaster
+                                        <input type="checkbox">Grille-pain
                                     </label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Grill
+                                        <input type="checkbox">Grilles
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Oven
+                                        <input type="checkbox">Four
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Fans
+                                        <input type="checkbox">Ventilateurs
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
@@ -212,12 +207,12 @@
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Furnished
+                                        <input type="checkbox">Meublé
                                     </label>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-6">
                                     <label class="checkbox">
-                                        <input type="checkbox">Cupboards
+                                        <input type="checkbox">Placards
                                     </label>
                                 </div>
                             </div>

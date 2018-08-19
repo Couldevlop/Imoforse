@@ -1,4 +1,7 @@
 @extends('layouts.default')
+@section('title')
+    Connexion - Imoforse
+@stop
 @section('showcase')
 
 @stop
@@ -6,9 +9,7 @@
     <div class="container">
         <div class="page">
             <div class="row">
-                <div class="col-md-4 col-sm-4">
-                </div>
-                <div class="col-md-4 col-sm-4 login-form">
+                <div class="col-md-5 col-sm-5 col-lg-push-2 login-form">
                     <h3>Connexion</h3>
                     <form>
                         <div class="input-group">
@@ -22,9 +23,16 @@
                         </div>
                         <div class="checkbox">
                             <input type="checkbox"> Se souvenir de moi!
+                            <a href="#" class="pull-right">Mot de passe oublié ?</a>
                         </div>
                         <button type="submit" class="btn btn-primary">Se connecter</button>
                     </form>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-push-3 padding-tb45">
+                    <h4>Pour bénéficiez de l'ensemble de services offerts par notre plateforme, merci de vous inscrit. Elle est gratuite</h4>
+                    <div>
+                        <a href="{{ url('/register') }}"><b>Pas encore inscrit ?</b></a>
+                    </div>
                 </div>
             </div>
         </div>

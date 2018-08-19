@@ -127,7 +127,7 @@
                       <li><a href="contract-type.php">Sold</a></li>
                     </ul>
                   </li>
-                  <li><a href="property-detail.php">Single Property</a></li>
+                  <li><a href="{{ url('/propertyDetail') }}">Single Property</a></li>
                   <li><a href="property-detail-fw.php">Single Property Full Width</a></li>
                 </ul>
               </li>

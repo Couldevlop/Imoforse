@@ -19,7 +19,7 @@
                 <option>Achat</option>
             </select>
             <select name="propery location" class="form-control input-lg selectpicker">
-                <option selected>Location</option>
+                <option selected>Localisation</option>
                 <option>Abidjan</option>
                 <option>Grand Bassam</option>
             </select>

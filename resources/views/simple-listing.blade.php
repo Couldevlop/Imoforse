@@ -1,4 +1,7 @@
 @extends('layouts.default-sidebar-layout')
+@section('title')
+    Nos offres - Imoforse
+@stop
 @section('showcase')
 
 @stop

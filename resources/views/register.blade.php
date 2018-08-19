@@ -1,4 +1,7 @@
 @extends('layouts.default')
+@section('title')
+    Inscription - Imoforse
+@stop
 @section('showcase')
 
 @stop

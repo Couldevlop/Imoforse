@@ -1,7 +1,7 @@
 <!-- Basic Page Needs
      ================================================== -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Imoforse</title>
+<title>@yield('title')</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
@@ -13,7 +13,7 @@
 <link href="{{ asset('/plugins/prettyphoto/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('/plugins/owl-carousel/css/owl.carousel.css') }} " rel="stylesheet" type="text/css">
 <link href=" {{ asset('/plugins/owl-carousel/css/owl.theme.css')}} " rel="stylesheet" type="text/css">
-<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="{{ asset('/css/ie.css')}}" media="screen" /><![endif]-->
 <!-- Color Style -->
 <link href=" {{ asset('/colors/color9.css')}} " rel="stylesheet" type="text/css">
 

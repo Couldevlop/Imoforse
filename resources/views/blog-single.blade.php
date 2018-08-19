@@ -1,4 +1,7 @@
 @extends('layouts.single-blog-post_layout');
+@section('title')
+    Blog détails - Imoforse
+@stop
 @section('showcase')
 
 @stop

@@ -1,4 +1,7 @@
 @extends ('layouts.default')
+@section('title')
+    Contacter - Imoforse
+@stop
 @section('showcase')
     <div class="site-showcase">
         <!-- Start Page Header -->
@@ -56,7 +59,7 @@
 
                 /* Properties Array */
                 var properties = [
-                    { title:"116 Waverly Place",  price:"<strong>$</strong><span>2,800 monthly</span>",  lat:40.73238,  lng:-73.99948,  thumb:"http://placehold.it/150x100&amp;text=IMAGE+PLACEHOLDER",  url:"property-details.php",  icon:"images/map-marker.png", }
+                    { title:"Imoforse",  price:"<span>2,800 monthly</span><strong>FCFA</strong>",  lat:5.36395,  lng:-3.92702,  thumb:"http://placehold.it/150x100&amp;text=IMAGE+PLACEHOLDER",  url:"property-details.php",  icon:"images/map-marker.png", }
 
                 ];
 

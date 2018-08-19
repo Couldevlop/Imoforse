@@ -1,4 +1,7 @@
 @extends('layouts.default')
+@section('title')
+    A propos - Imoforse
+@stop
 @section('showcase')
     <!--<div class="parallax page-header" style="background-image:url('{{ asset('/images/banner/1200x260.png') }}');">
         <div class="container">

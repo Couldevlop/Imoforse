@@ -1,6 +1,9 @@
 @extends('layouts.view-property-layout')
+@section('title')
+infos sur la propriétés - Imoforse
+@stop
 @section('showcase')
-    <div class="clearfix map-single-page" id="gmap"></div>
+    <!--<div class="clearfix map-single-page" id="gmap"></div>-->
 @stop
 @section('content')
     <div class="single-property">
@@ -10,18 +13,18 @@
         <div class="property-slider">
             <div id="property-images" class="flexslider">
                 <ul class="slides">
-                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/place/location-saisonniere/img-1.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/place/location-saisonniere/img-2.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/place/location-saisonniere/img-3.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/place/location-saisonniere/img-4.jpg') }}" alt=""> </li>
                 </ul>
             </div>
             <div id="property-thumbs" class="flexslider">
                 <ul class="slides">
-                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
-                    <li class="item"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/place/location-saisonniere/img-1.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/place/location-saisonniere/img-2.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/place/location-saisonniere/img-3.jpg') }}" alt=""> </li>
+                    <li class="item"> <img src="{{ asset('/data/place/location-saisonniere/img-4.jpg') }}" alt=""> </li>
                 </ul>
             </div>
         </div>
@@ -37,33 +40,37 @@
                 </div>
                 <div id="amenities" class="tab-pane">
                     <div class="additional-amenities">
-                        <span class="available"><i class="fa fa-check-square"></i> Air Conditioning</span>
-                        <span class="available"><i class="fa fa-check-square"></i> Heating</span>
-                        <span class="navailable"><i class="fa fa-check-square"></i> Balcony</span>
-                        <span class="available"><i class="fa fa-check-square"></i> Dishwasher</span>
-                        <span class="navailable"><i class="fa fa-check-square"></i> Pool</span>
+                        <span class="available"><i class="fa fa-check-square"></i> Ventilateur</span>
+                        <span class="available"><i class="fa fa-check-square"></i> Chauffage</span>
+                        <span class="navailable"><i class="fa fa-check-square"></i> Balcon</span>
+                        <span class="available"><i class="fa fa-check-square"></i> Lave-vaisselle</span>
+                        <span class="navailable"><i class="fa fa-check-square"></i> Piscine</span>
                         <span class="available"><i class="fa fa-check-square"></i> Internet</span>
-                        <span class="navailable"><i class="fa fa-check-square"></i> Terrace</span>
-                        <span class="available"><i class="fa fa-check-square"></i> Microwave</span>
-                        <span class="navailable"><i class="fa fa-check-square"></i> Fridge</span>
-                        <span class="navailable"><i class="fa fa-check-square"></i> Cable TV</span>
-                        <span class="available"><i class="fa fa-check-square"></i> Security Camera</span>
-                        <span class="available"><i class="fa fa-check-square"></i> Toaster</span>
-                        <span class="navailable"><i class="fa fa-check-square"></i> Grill</span>
-                        <span class="navailable"><i class="fa fa-check-square"></i> Oven</span>
-                        <span class="available"><i class="fa fa-check-square"></i> Fans</span>
+                        <span class="navailable"><i class="fa fa-check-square"></i> Terrasse</span>
+                        <span class="available"><i class="fa fa-check-square"></i> Four micro onde</span>
+                        <span class="navailable"><i class="fa fa-check-square"></i> Frigo</span>
+                        <span class="navailable"><i class="fa fa-check-square"></i> TV</span>
+                        <span class="available"><i class="fa fa-check-square"></i> Camera de sécurité</span>
+                        <span class="available"><i class="fa fa-check-square"></i> Grille-pain</span>
+                        <span class="navailable"><i class="fa fa-check-square"></i> Grilles</span>
+                        <span class="navailable"><i class="fa fa-check-square"></i> Four</span>
+                        <span class="available"><i class="fa fa-check-square"></i> Ventilateurs</span>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="section-map">
+          <h3>localisation</h3>
+            <div class="clearfix map-single-page" id="gmap"></div>
         </div>
         <h3>Agent</h3>
         <div class="agent">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="{{ asset('/data/specimen.jpg') }}" alt="Mia Kennedy">
+                    <img src="{{ asset('/data/agents/img-1.jpg') }}" alt="">
                 </div>
                 <div class="col-md-8">
-                    <h4><a href="agent-single.php">Mia Keneddy</a></h4>
+                    <h4><a href="{{ url('/agentDetail') }}">Mia Keneddy</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula dapibus mauris, quis ullamcorper enim aliquet sed. Maecenas quis eget tellus dui. Vivamus condimentum egestas.</p>
                     <div class="agent-contacts clearfix">
                         <a href="#" class="btn btn-primary pull-right btn-sm">Contact Agent</a>
@@ -83,9 +90,9 @@
     <div class="property-grid">
         <ul class="grid-holder col-3">
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
+                <div class="property-block"> <a href="{{ url('/properyDetail') }}" class="property-featured-image"> <img src="{{ asset('/data/place/location-saisonniere/img-1.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Louer</span> </a>
                     <div class="property-info">
-                        <h4><a href="#">116 Waverly Place</a></h4>
+                        <h4><a href="{{ url('/propertyDetail') }}">116 Waverly Place</a></h4>
                         <span class="location">NYC</span>
                         <div class="price"><span>60000/Mois</span><strong>CFA</strong></div>
                     </div>
@@ -93,9 +100,9 @@
                 </div>
             </li>
             <li class="grid-item type-buy">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
+                <div class="property-block"> <a href="{{ url('/propertyDetail') }}" class="property-featured-image"> <img src="{{ asset('/data/place/location-saisonniere/img-2.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                     <div class="property-info">
-                        <h4><a href="#">232 East 63rd Street</a></h4>
+                        <h4><a href="{{ url('/propertyDetail') }}">232 East 63rd Street</a></h4>
                         <span class="location">NYC</span>
                         <div class="price"><span>250 000</span><strong>CFA</strong></div>
                     </div>
@@ -103,9 +110,9 @@
                 </div>
             </li>
             <li class="grid-item type-rent">
-                <div class="property-block"> <a href="#" class="property-featured-image"> <img src="{{ asset('/data/specimen.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
+                <div class="property-block"> <a href="{{ url('/propertyDetail') }}" class="property-featured-image"> <img src="{{ asset('/data/place/location-saisonniere/img-3.jpg') }}" alt=""> <span class="images-count"><i class="fa fa-picture-o"></i> 2</span> <span class="badges">Acheter</span> </a>
                     <div class="property-info">
-                        <h4><a href="#">55 Warren Street</a></h4>
+                        <h4><a href="{{ url('/propertyDetail') }}">55 Warren Street</a></h4>
                         <span class="location">NYC</span>
                         <div class="price"><span>300 000</span><strong>CFA</strong></div>
                     </div>
@@ -123,7 +130,7 @@
 
                 /* Properties Array */
                 var properties = [
-                    { title:"116 Waverly Place",  price:"<strong>$</strong><span>2,800 monthly</span>",  lat:40.73238,  lng:-73.99948,  thumb:"images/property1-map.jpg",  url:"property-details.php",  icon:"images/map-marker.png", }
+                    { title:"Titre du bien",  price:"<strong>$</strong><span>prix du bien</span>",  lat:5.36395,  lng:-3.92702,  thumb:"{{ asset('/images/property1-map.jpg') }}",  url:"property-details.php",  icon:"{{ asset('/images/map-marker.png') }}", }
 
                 ];
 

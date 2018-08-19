@@ -1,4 +1,7 @@
 @extends('layouts.agent-layout')
+@section('title')
+    Agents détails - Imoforse
+@stop
 @section('showcase')
 
 @stop
