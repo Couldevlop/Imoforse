@@ -57,7 +57,7 @@
                     <a href="{{ url('/propertyDetail') }}"><img src="{{ asset('/data/specimen.jpg') }}" alt="" class="img-thumbnail"></a>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-7">
-                    <strong><a href="{{ url('/propertyDetail') }}">70 Greene Street</a></strong>
+                    <strong><a href="{{ url('/propertyDetail') }}">Imoforse Sarl</a></strong>
                     <div class="price"><span>500000</span><strong>FCFA</strong></div>
                 </div>
             </div>
