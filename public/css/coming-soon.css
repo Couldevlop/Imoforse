@@ -1,0 +1,361 @@
+a,
+button,
+input,
+select,
+textarea{
+	outline:none
+}
+a:focus,
+a:hover,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus{
+	outline:none!important;
+	text-decoration:none;
+}
+body{
+	position:relative;
+	font-family: "Montserrat", "Open Sans",  Arial, sans-serif;
+	font-size:14px;
+	color:#232323;
+	padding:0;
+	margin:0;
+	letter-spacing:.014em
+}
+p{
+	line-height:1.7em;
+	letter-spacing:.02em;
+	font-size:15px
+}
+input,textarea{
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0
+}
+input[type=email],
+input[type=file],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=text],
+input[type=url]{
+	background:none;
+	border:1px solid #d4d4d4;
+	background-color:#fff;
+	height:40px;
+	line-height:40px;
+	padding:0 12px;
+	color:#666;
+	font-size:12px;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	font-family:"Montserrat", "Open Sans", Arial, sans-serif
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+	-webkit-appearance:none;margin:0
+}
+input[type=number]{
+	-moz-appearance:textfield
+}
+select{
+	color:#232323;
+	font-family:"Montserrat", "Open Sans", Arial, sans-serif;
+	font-size:12px
+}
+textarea{
+	background:none;
+	border:1px solid #d4d4d4;
+	background-color:#fff;
+	resize:none;padding:12px;
+	height:140px;
+	color:#666;
+	font-size:14px;
+	vertical-align:middle
+}
+input::-webkit-input-placeholder{
+	color:#c4c4c4
+}
+input:-moz-placeholder{
+	color:#b4b3b3;opacity:1
+}
+input::-moz-placeholder{
+	color:#b4b3b3;opacity:1
+}
+input:-ms-input-placeholder{
+	color:#b4b3b3
+}
+textarea::-webkit-input-placeholder{
+	color:#b4b3b3
+}
+textarea:-moz-placeholder{
+	color:#b4b3b3
+}
+textarea::-moz-placeholder{
+	color:#b4b3b3
+}
+textarea:-ms-input-placeholder{
+	color:#b4b3b3
+}
+a{
+	color:#232323
+}
+img{
+	max-width:100%;
+	height:auto;
+	vertical-align:middle;
+	border:0
+}
+#wrapper{
+	overflow:hidden;
+	background-color:#f7f7f7
+}
+.awe-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:rgba(72, 72, 72, 0.5);
+	top:0;
+	left:0;
+	z-index:0
+}
+section{
+	position:relative
+}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	line-height:1.5em;
+	color:#232323;
+	font-family:px;
+	font-family:"Monserrat", "Open Sans", Arial, sans-serif;margin:0
+}
+.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
+	color:inherit
+}
+.h1,h1{
+	font-size:36px;
+	font-weight:bold
+}
+.h2,h2{
+	font-size:28px
+}
+.h3,h3{
+	font-size:24px
+}
+.h4,h4{
+	font-size:21px
+}
+.h5,h5{
+	font-size:18.15px;
+	font-weight:bold
+}
+.h6,h6{
+	font-size:14.12px
+}
+.section-coming-soon{
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.bg-coming-soon{
+	background-image:url("../images/coming-soon-img.jpg")
+}
+.coming-soon_content{
+	position:absolute;
+	padding:15px;
+	left:0;
+	right:0;
+	top:50%;
+	-webkit-transform:translate(0, -50%);
+	-moz-transform:translate(0, -50%);
+	-ms-transform:translate(0, -50%);
+	-o-transform:translate(0, -50%);
+	transform:translate(0, -50%)
+}
+.coming-soon_content .img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+	text-align: left;
+	padding: 35px 0;
+}
+.coming-soon_content .text h1{
+	color:#fff;
+	text-transform:none;
+	font-size:60px;
+	font-family:"Monserrat", "Open Sans", Arial, sans-serif;
+	line-height:1;
+	margin-top:20px;
+	text-align: left;
+	text-shadow: 0 2px #666666;
+}
+.coming-soon_content .text h1 span{
+	color:#f39719;
+	text-align: left;
+	text-shadow: 0 2px #666666;
+}
+.coming-soon_content .text h6{
+	color:#fff;
+	font-size:36px;
+	margin-top:10px;
+	font-weight:normal;
+	font-family: "Open Sans", "Monserrat", Arial, sans-serif;
+	text-align: left;
+}
+.coming-soon_content .text p{
+	margin-bottom:0;
+	font-size:20px;
+	color:#fff;
+	margin-top:25px;
+	margin-bottom:10px;
+	text-align: left;
+}
+
+.coming-soon_content .countdown{
+	border:none;
+	max-width:730px;
+	margin-top:10px;
+	overflow:hidden;
+	padding-top:10px;
+	padding-bottom:10px
+}
+.coming-soon_content .countdown .item{
+	width:15%;
+	float:left;
+	color:#fff;
+	font-size:16px;
+	text-transform:uppercase;
+	text-align:left;
+	margin-top:10px;
+	position:relative;
+	text-shadow: 0 2px #666666;
+}
+.coming-soon_content .countdown .item+.item:before{
+	content:':';
+	position:absolute;
+	left:0;
+	top:50%;
+	font-size:30px;
+	-webkit-transform:translate(-150%, -75%);
+	-moz-transform:translate(-150%, -75%);
+	-ms-transform:translate(-150%, -75%);
+	-o-transform:translate(-150%, -75%);
+	transform:translate(-150%, -75%);
+	text-shadow: 0 2px #666666;
+}
+.coming-soon_content .countdown .item .count{
+	display:block;
+	font-family:"Monserrat", "Open Sans", Arial, sans-serif;
+	font-size:50px;
+	line-height:1;
+	text-shadow: 0 2px #666666;
+}
+.coming-soon_content .subscribe{
+	margin-bottom: 20px;
+}
+.coming-soon_content .subscribe .subscribe-form .subscribe-form-group{
+	width:41.66666667%;
+	padding-top:20px;
+	padding-bottom:10px;
+	float:left
+}
+.coming-soon_content .subscribe .subscribe-form .subscribe-form-group .subscribe-input{
+	width:100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	border:1px solid #fff!important;
+	color:#232323;
+}
+.coming-soon_content .subscribe .input-submit{
+	display:inline-block;
+	height:40px;
+	line-height:40px;
+	padding:3px 12px 0 12px;
+	text-transform:uppercase;
+	background:#f39719;
+	border:none!important;
+	color:#fff;
+	font-weight:600;
+	float:left;
+	margin-top:20px;
+	text-shadow: 0 2px #747474;	
+}
+.coming-soon_content .widget_social .widget-title{
+	margin-top:25px;
+	color:#fff;
+	font-weight:normal;
+	font-family: "Open Sans","Monserrat", Arial, sans-serif;
+	font-size:20px
+}
+.coming-soon_content .widget_social .widget-social{
+	text-align:left;
+	font-size:0
+}
+.coming-soon_content .widget_social .widget-social a{
+	display:inline-block;
+	border:2px solid #fff;
+	color:#fff;
+	font-size:16px;
+	height:30px;
+	width:30px;
+	line-height:30px;
+	text-align:center;
+	margin:15px 10px 0 10px;
+	border-radius:100%;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-ms-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	transition:all .3s ease;
+	text-shadow: 0 2px #666666;
+}
+.coming-soon_content .widget_social .widget-social a:hover{
+	border-color:#f39719
+}
+.coming-soon_content .widget_social .widget-social i:hover{
+	color:#f39719
+}
+
+
+@media screen and (max-width:320px){	
+.coming-soon_content .text h1{font-size:38px;margin-bottom:20px}
+.coming-soon_content .text h6{font-size:20px}
+.coming-soon_content .text p{font-size:16px;margin-top:15px;line-height:1em}
+.coming-soon_content .countdown .item{font-size:10px;width:25%}
+.coming-soon_content .countdown .item+.item:before{font-size:20px}
+.coming-soon_content .countdown .item .count{font-size:30px}
+.coming-soon_content .subscribe .subscribe-form-group{width:100%!important}
+.coming-soon_content .subscribe .subscribe-form-group .subscribe-input{margin:0}
+.coming-soon_content .subscribe .input-submit{width:100%!important;margin:0}
+.coming-soon_content .widget_social .widget-title{font-size:16px;margin-top:15px;}
+.coming-soon_content .widget_social .widget-social a{margin:10px 5px 0 5px;font-size:17px;}
+}
+@media only screen and (min-width: 321px) and (max-width: 446px ){		
+.coming-soon_content .logo{text-align:left;width:100%}
+.coming-soon_content .logo img{width:50%}
+.coming-soon_content .text h1{font-size:3em}
+.coming-soon_content .text p{font-size:1.3em;line-height:1em}
+.coming-soon_content .countdown .item{width:25%;font-size:14px}
+.coming-soon_content .countdown .item .count{font-size:30px}
+.coming-soon_content .subscribe .subscribe-form-group{width:100%!important}
+.coming-soon_content .subscribe .subscribe-form-group .subscribe-input{margin:0}
+.coming-soon_content .subscribe .input-submit{width:100%!important;margin:0}
+}
+@media only screen and (min-width: 447px) and (max-width: 590px){	
+.coming-soon_content .logo img{width:100%}
+.coming-soon_content .text h1{font-size:50px}
+.coming-soon_content .countdown .item{width:20%;font-size:15px}
+.coming-soon_content .countdown .item .count{font-size:40px}
+.coming-soon_content .subscribe .subscribe-form-group{width:70%!important}
+}
+
+@media only screen and (min-width: 591px) and (max-width: 1199px){	
+.coming-soon_content .subscribe .subscribe-form-group{width:70%!important}
+}

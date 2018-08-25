@@ -92,3 +92,6 @@ Route::get('/blogSingle', function () {
 ;Route::get('/agentDetail', function () {
     return view('agent-detail');
 });
+;Route::get('/comingSoon', function () {
+    return view('coming-soon');
+});
